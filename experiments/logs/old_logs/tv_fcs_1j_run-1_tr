@@ -1,0 +1,1013 @@
+# time manager_pid MANAGER manager_pid START|END time_from_origin
+# time manager_pid WORKER worker_id CONNECTION host:port
+# time manager_pid WORKER worker_id DISCONNECTION (UNKNOWN|IDLE_OUT|FAST_ABORT|FAILURE|STATUS_WORKER|EXPLICIT)
+# time manager_pid WORKER worker_id RESOURCES {resources}
+# time manager_pid WORKER worker_id CACHE_UPDATE filename size_in_mb wall_time_us start_time_us
+# time manager_pid WORKER worker_id TRANSFER (INPUT|OUTPUT) filename size_in_mb wall_time_us start_time_us
+# time manager_pid CATEGORY name MAX {resources_max_per_task}
+# time manager_pid CATEGORY name MIN {resources_min_per_task_per_worker}
+# time manager_pid CATEGORY name FIRST (FIXED|MAX|MIN_WASTE|MAX_THROUGHPUT) {resources_requested}
+# time manager_pid TASK task_id WAITING category_name (FIRST_RESOURCES|MAX_RESOURCES) attempt_number {resources_requested}
+# time manager_pid TASK task_id RUNNING worker_id (FIRST_RESOURCES|MAX_RESOURCES) {resources_allocated}
+# time manager_pid TASK task_id WAITING_RETRIEVAL worker_id
+# time manager_pid TASK task_id RETRIEVED (SUCCESS|UNKNOWN|INPUT_MISSING|OUTPUT_MISSING|STDOUT_MISSING|SIGNAL|RESOURCE_EXHAUSTION|MAX_RETRIES|MAX_END_TIME|MAX_WALL_TIME|FORSAKEN) {limits_exceeded} {resources_measured}
+# time manager_pid TASK task_id DONE (SUCCESS|UNKNOWN|INPUT_MISSING|OUTPUT_MISSING|STDOUT_MISSING|SIGNAL|RESOURCE_EXHAUSTION|MAX_RETRIES|MAX_END_TIME|MAX_WALL_TIME|FORSAKEN) exit_code
+# time manager_pid LIBRARY library_id (WAITING|SENT|STARTED|FAILURE) worker_id
+# time manager_pid APPLICATION message*
+1713200243166512 2029583 MANAGER 2029583 START 0
+1713200244760667 2029583 TASK 1 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244769726 2029583 TASK 2 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244778033 2029583 TASK 3 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244786274 2029583 TASK 4 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244794773 2029583 TASK 5 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244803204 2029583 TASK 6 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244811620 2029583 TASK 7 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244820137 2029583 TASK 8 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244828568 2029583 TASK 9 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244837034 2029583 TASK 10 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244845497 2029583 TASK 11 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244853846 2029583 TASK 12 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244862126 2029583 TASK 13 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244870568 2029583 TASK 14 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244878951 2029583 TASK 15 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244887335 2029583 TASK 16 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244895606 2029583 TASK 17 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244903985 2029583 TASK 18 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244912302 2029583 TASK 19 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244920633 2029583 TASK 20 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244928921 2029583 TASK 21 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244937255 2029583 TASK 22 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244945553 2029583 TASK 23 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244953905 2029583 TASK 24 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244962236 2029583 TASK 25 READY subgraph_callable-294c6d6efd250cedda5e3a11aec792c5 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244970603 2029583 TASK 26 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244978650 2029583 TASK 27 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244986625 2029583 TASK 28 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200244994794 2029583 TASK 29 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245002855 2029583 TASK 30 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245010931 2029583 TASK 31 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245019006 2029583 TASK 32 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245026998 2029583 TASK 33 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245035217 2029583 TASK 34 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245043340 2029583 TASK 35 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245051535 2029583 TASK 36 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245059580 2029583 TASK 37 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245067829 2029583 TASK 38 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245075915 2029583 TASK 39 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245084165 2029583 TASK 40 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245092255 2029583 TASK 41 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245100578 2029583 TASK 42 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245108654 2029583 TASK 43 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245117430 2029583 TASK 44 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245125471 2029583 TASK 45 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245133516 2029583 TASK 46 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245141490 2029583 TASK 47 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245149512 2029583 TASK 48 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245157586 2029583 TASK 49 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200245165655 2029583 TASK 50 READY subgraph_callable-06c0f87077ac8faf1dc45390b30b2af6 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200283492665 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CONNECTION 10.32.91.205:42462
+1713200283492917 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 RESOURCES {"memory":[200000,"MB"],"disk":[500000,"MB"],"cores":[4,"cores"]}
+1713200283493667 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT library_code.py 9380 682 1713200283492983
+1713200283493943 2029583 TASK 51 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200283.492944,"s"],"time_commit_end":[1713200283.493886,"s"],"time_input_mgr":[0.000942,"s"],"size_input_mgr":[0.008945465087890625,"MB"],"memory":[200000,"MB"],"disk":[500000,"MB"],"gpus":[0,"gpus"],"cores":[4,"cores"]}
+1713200283493946 2029583 LIBRARY 51 SENT worker-f2976dfa04f0c128e005a58572162713
+1713200283494399 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 440 1713200283493957
+1713200283494562 2029583 TASK 37 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200283.493956,"s"],"time_commit_end":[1713200283.494539,"s"],"time_input_mgr":[0.000583,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200283494584 2029583 LIBRARY 51 STARTED worker-f2976dfa04f0c128e005a58572162713
+1713200283494800 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 197 1713200283494601
+1713200283494972 2029583 TASK 42 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200283.4946,"s"],"time_commit_end":[1713200283.494949,"s"],"time_input_mgr":[0.000349,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200283495106 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 103 1713200283495002
+1713200283495244 2029583 TASK 49 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200283.495001,"s"],"time_commit_end":[1713200283.495222,"s"],"time_input_mgr":[0.000221,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200283495379 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 112 1713200283495266
+1713200283495526 2029583 TASK 8 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200283.495265,"s"],"time_commit_end":[1713200283.495504,"s"],"time_input_mgr":[0.000239,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200294807274 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ozsmbkymkodeixe 0 11273770 1713200283533124
+1713200294807780 2029583 TASK 37 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200294807858 2029583 TASK 37 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200283.533124,"s"],"time_worker_end":[1713200294.806894,"s"],"time_output_mgr":[2.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200283.493956,"s"],"time_commit_end":[1713200283.494539,"s"],"time_input_mgr":[0.000583,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200294808085 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 193 1713200294807890
+1713200294808279 2029583 TASK 2 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200294.807889,"s"],"time_commit_end":[1713200294.808243,"s"],"time_input_mgr":[0.000354,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200294808297 2029583 TASK 37 DONE SUCCESS  0 
+1713200295064656 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yrtjpcizhepcbtu 0 11530922 1713200283533156
+1713200295065122 2029583 TASK 8 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200295065190 2029583 TASK 8 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200283.533156,"s"],"time_worker_end":[1713200295.064078,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200283.495265,"s"],"time_commit_end":[1713200283.495504,"s"],"time_input_mgr":[0.000239,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200295065393 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 175 1713200295065216
+1713200295065535 2029583 TASK 13 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200295.065216,"s"],"time_commit_end":[1713200295.065511,"s"],"time_input_mgr":[0.000295,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200295065547 2029583 TASK 8 DONE SUCCESS  0 
+1713200295071929 2029583 TASK 52 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200297090871 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ncrbkemyhqikiyd 0 13557371 1713200283533136
+1713200297091639 2029583 TASK 42 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200297091775 2029583 TASK 42 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200283.533136,"s"],"time_worker_end":[1713200297.090507,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200283.4946,"s"],"time_commit_end":[1713200283.494949,"s"],"time_input_mgr":[0.000349,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200297091972 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 140 1713200297091831
+1713200297092118 2029583 TASK 7 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200297.09183,"s"],"time_commit_end":[1713200297.092095,"s"],"time_input_mgr":[0.000265,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200297092130 2029583 TASK 42 DONE SUCCESS  0 
+1713200298101716 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ouszidrqkfbgxig 0 14568247 1713200283533146
+1713200298102428 2029583 TASK 49 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200298102556 2029583 TASK 49 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200283.533146,"s"],"time_worker_end":[1713200298.101393,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200283.495001,"s"],"time_commit_end":[1713200283.495222,"s"],"time_input_mgr":[0.000221,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200298102814 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 196 1713200298102615
+1713200298103006 2029583 TASK 45 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200298.102614,"s"],"time_commit_end":[1713200298.102983,"s"],"time_input_mgr":[0.000369,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200298103018 2029583 TASK 49 DONE SUCCESS  0 
+1713200306524483 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-dnprteluovykggc 0 11715056 1713200294809025
+1713200306525114 2029583 TASK 2 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200306525192 2029583 TASK 2 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200294.809025,"s"],"time_worker_end":[1713200306.524081,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200294.807889,"s"],"time_commit_end":[1713200294.808243,"s"],"time_input_mgr":[0.000354,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200306525368 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 135 1713200306525231
+1713200306525501 2029583 TASK 44 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200306.52523,"s"],"time_commit_end":[1713200306.525477,"s"],"time_input_mgr":[0.000247,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200306525517 2029583 TASK 2 DONE SUCCESS  0 
+1713200306531684 2029583 TASK 53 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200311508124 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-lugfmkujnunsuip 0 14414605 1713200297093172
+1713200311508855 2029583 TASK 7 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200311509002 2029583 TASK 7 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200297.093172,"s"],"time_worker_end":[1713200311.507777,"s"],"time_output_mgr":[5.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200297.09183,"s"],"time_commit_end":[1713200297.092095,"s"],"time_input_mgr":[0.000265,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200311509385 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 311 1713200311509072
+1713200311509540 2029583 TASK 17 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200311.509071,"s"],"time_commit_end":[1713200311.509515,"s"],"time_input_mgr":[0.000444,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200311509552 2029583 TASK 7 DONE SUCCESS  0 
+1713200311514221 2029583 TASK 54 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200313828308 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xdvaoreblfiycjr 0 18762010 1713200295065955
+1713200313828880 2029583 TASK 13 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200313828950 2029583 TASK 13 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200295.065955,"s"],"time_worker_end":[1713200313.827965,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200295.065216,"s"],"time_commit_end":[1713200295.065511,"s"],"time_input_mgr":[0.000295,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200313829102 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 114 1713200313828987
+1713200313829229 2029583 TASK 39 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200313.828986,"s"],"time_commit_end":[1713200313.829206,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200313829241 2029583 TASK 13 DONE SUCCESS  0 
+1713200313833314 2029583 TASK 55 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200315915903 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ghnvnajigfdmefp 0 17811685 1713200298103845
+1713200315916612 2029583 TASK 45 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200315916778 2029583 TASK 45 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200298.103845,"s"],"time_worker_end":[1713200315.91553,"s"],"time_output_mgr":[5.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200298.102614,"s"],"time_commit_end":[1713200298.102983,"s"],"time_input_mgr":[0.000369,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200315916979 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 106 1713200315916869
+1713200315917214 2029583 TASK 53 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200315.916867,"s"],"time_commit_end":[1713200315.91719,"s"],"time_input_mgr":[0.000323,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200315917226 2029583 TASK 45 DONE SUCCESS  0 
+1713200318013384 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ycjwtzefsamryht 0 2095170 1713200315917889
+1713200318014161 2029583 TASK 53 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200318014324 2029583 TASK 53 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200315.917889,"s"],"time_worker_end":[1713200318.013059,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200315.916867,"s"],"time_commit_end":[1713200315.91719,"s"],"time_input_mgr":[0.000323,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200318014565 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 180 1713200318014381
+1713200318014770 2029583 TASK 12 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200318.01438,"s"],"time_commit_end":[1713200318.014746,"s"],"time_input_mgr":[0.000366,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200318014782 2029583 TASK 53 DONE SUCCESS  0 
+1713200318018074 2029583 TASK 56 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200318018314 2029583 TASK 57 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200326946523 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vugpxgabssdrmpm 0 15435510 1713200311510633
+1713200326947060 2029583 TASK 17 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200326947153 2029583 TASK 17 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200311.510633,"s"],"time_worker_end":[1713200326.946143,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200311.509071,"s"],"time_commit_end":[1713200311.509515,"s"],"time_input_mgr":[0.000444,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200326947554 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 366 1713200326947187
+1713200326947687 2029583 TASK 19 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200326.947186,"s"],"time_commit_end":[1713200326.94766,"s"],"time_input_mgr":[0.000474,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200326947700 2029583 TASK 17 DONE SUCCESS  0 
+1713200326952729 2029583 TASK 58 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200328671988 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-okkihvmxklmfyok 0 14841443 1713200313830180
+1713200328672674 2029583 TASK 39 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200328672764 2029583 TASK 39 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200313.83018,"s"],"time_worker_end":[1713200328.671623,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200313.828986,"s"],"time_commit_end":[1713200313.829206,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200328672947 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 143 1713200328672802
+1713200328673081 2029583 TASK 25 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200328.672801,"s"],"time_commit_end":[1713200328.673056,"s"],"time_input_mgr":[0.000255,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200328673099 2029583 TASK 39 DONE SUCCESS  0 
+1713200328705061 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-pdorftgftbbbczz 0 22178363 1713200306526432
+1713200328705501 2029583 TASK 44 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200328705579 2029583 TASK 44 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200306.526432,"s"],"time_worker_end":[1713200328.704795,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200306.52523,"s"],"time_commit_end":[1713200306.525477,"s"],"time_input_mgr":[0.000247,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200328705663 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 49 1713200328705612
+1713200328705933 2029583 TASK 55 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200328.705611,"s"],"time_commit_end":[1713200328.705909,"s"],"time_input_mgr":[0.000298,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200328705944 2029583 TASK 44 DONE SUCCESS  0 
+1713200328786163 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ycqpkcbjrvwcftw 0 10769891 1713200318015978
+1713200328786613 2029583 TASK 12 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200328786688 2029583 TASK 12 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200318.015978,"s"],"time_worker_end":[1713200328.785869,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200318.01438,"s"],"time_commit_end":[1713200318.014746,"s"],"time_input_mgr":[0.000366,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200328786867 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 145 1713200328786720
+1713200328787024 2029583 TASK 24 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200328.786719,"s"],"time_commit_end":[1713200328.786996,"s"],"time_input_mgr":[0.000277,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200328787042 2029583 TASK 12 DONE SUCCESS  0 
+1713200328791724 2029583 TASK 59 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200331413502 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-wrmgpvtocfxyjtq 0 2707159 1713200328705943
+1713200331414208 2029583 TASK 55 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200331414315 2029583 TASK 55 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200328.705943,"s"],"time_worker_end":[1713200331.413102,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200328.705611,"s"],"time_commit_end":[1713200328.705909,"s"],"time_input_mgr":[0.000298,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200331414407 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 54 1713200331414352
+1713200331414579 2029583 TASK 56 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200331.414351,"s"],"time_commit_end":[1713200331.414555,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200331414592 2029583 TASK 55 DONE SUCCESS  0 
+1713200331418642 2029583 TASK 60 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200331418935 2029583 TASK 61 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200333841595 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-zndreryqvtojwzu 0 2426389 1713200331414811
+1713200333842205 2029583 TASK 56 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200333842341 2029583 TASK 56 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200331.414811,"s"],"time_worker_end":[1713200333.8412,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200331.414351,"s"],"time_commit_end":[1713200331.414555,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200333842527 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 135 1713200333842390
+1713200333842695 2029583 TASK 33 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200333.842389,"s"],"time_commit_end":[1713200333.842668,"s"],"time_input_mgr":[0.000279,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200333842708 2029583 TASK 56 DONE SUCCESS  0 
+1713200338072946 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-mifxymtwiqktcij 0 9398630 1713200328673976
+1713200338073770 2029583 TASK 25 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200338073846 2029583 TASK 25 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200328.673976,"s"],"time_worker_end":[1713200338.072606,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200328.672801,"s"],"time_commit_end":[1713200328.673056,"s"],"time_input_mgr":[0.000255,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200338073986 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 100 1713200338073885
+1713200338074156 2029583 TASK 46 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200338.073884,"s"],"time_commit_end":[1713200338.074129,"s"],"time_input_mgr":[0.000245,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200338074168 2029583 TASK 25 DONE SUCCESS  0 
+1713200338079199 2029583 TASK 62 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200342804192 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-zptmwlpolezyfnu 0 14016407 1713200328787438
+1713200342804857 2029583 TASK 24 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200342804929 2029583 TASK 24 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200328.787438,"s"],"time_worker_end":[1713200342.803845,"s"],"time_output_mgr":[2.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200328.786719,"s"],"time_commit_end":[1713200328.786996,"s"],"time_input_mgr":[0.000277,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200342805105 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 140 1713200342804963
+1713200342805242 2029583 TASK 15 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200342.804962,"s"],"time_commit_end":[1713200342.805216,"s"],"time_input_mgr":[0.000254,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200342805256 2029583 TASK 24 DONE SUCCESS  0 
+1713200342809730 2029583 TASK 63 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200344173169 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-racqkyqxocxulda 0 10329259 1713200333843591
+1713200344173849 2029583 TASK 33 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200344173977 2029583 TASK 33 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200333.843591,"s"],"time_worker_end":[1713200344.17285,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200333.842389,"s"],"time_commit_end":[1713200333.842668,"s"],"time_input_mgr":[0.000279,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200344174217 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 170 1713200344174044
+1713200344174410 2029583 TASK 48 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200344.174043,"s"],"time_commit_end":[1713200344.174386,"s"],"time_input_mgr":[0.000343,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200344174422 2029583 TASK 33 DONE SUCCESS  0 
+1713200348355521 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ktkmsbsoccxwsdg 0 21406917 1713200326948242
+1713200348356248 2029583 TASK 19 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200348356333 2029583 TASK 19 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200326.948242,"s"],"time_worker_end":[1713200348.355159,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200326.947186,"s"],"time_commit_end":[1713200326.94766,"s"],"time_input_mgr":[0.000474,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200348356488 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 117 1713200348356369
+1713200348356643 2029583 TASK 35 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200348.356368,"s"],"time_commit_end":[1713200348.356616,"s"],"time_input_mgr":[0.000248,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200348356655 2029583 TASK 19 DONE SUCCESS  0 
+1713200348361702 2029583 TASK 64 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200359029310 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ivfhmdstqwjisei 0 14853046 1713200344175663
+1713200359030294 2029583 TASK 48 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200359030372 2029583 TASK 48 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200344.175663,"s"],"time_worker_end":[1713200359.028709,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200344.174043,"s"],"time_commit_end":[1713200344.174386,"s"],"time_input_mgr":[0.000343,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200359030532 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 121 1713200359030409
+1713200359030685 2029583 TASK 10 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200359.030408,"s"],"time_commit_end":[1713200359.030658,"s"],"time_input_mgr":[0.00025,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200359030697 2029583 TASK 48 DONE SUCCESS  0 
+1713200373018451 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-pjntmbsexlgghyd 0 30211906 1713200342806157
+1713200373019305 2029583 TASK 15 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200373019476 2029583 TASK 15 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200342.806157,"s"],"time_worker_end":[1713200373.018063,"s"],"time_output_mgr":[6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200342.804962,"s"],"time_commit_end":[1713200342.805216,"s"],"time_input_mgr":[0.000254,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200373019646 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 123 1713200373019521
+1713200373019800 2029583 TASK 26 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200373.01952,"s"],"time_commit_end":[1713200373.019773,"s"],"time_input_mgr":[0.000253,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200373019814 2029583 TASK 15 DONE SUCCESS  0 
+1713200373025974 2029583 TASK 65 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200385802220 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xaaqsnthtgyzmck 0 12780633 1713200373021200
+1713200385802693 2029583 TASK 26 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200385802770 2029583 TASK 26 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200373.0212,"s"],"time_worker_end":[1713200385.801833,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200373.01952,"s"],"time_commit_end":[1713200373.019773,"s"],"time_input_mgr":[0.000253,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200385802943 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534941 142 1713200385802799
+1713200385803076 2029583 TASK 11 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200385.802798,"s"],"time_commit_end":[1713200385.803049,"s"],"time_input_mgr":[0.000251,"s"],"size_input_mgr":[0.5101594924926758,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200385803089 2029583 TASK 26 DONE SUCCESS  0 
+1713200385803699 2029583 TASK 66 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200389194251 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-fflqwvelnomkmbm 0 40836292 1713200348357347
+1713200389194741 2029583 TASK 35 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200389194820 2029583 TASK 35 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200348.357347,"s"],"time_worker_end":[1713200389.193639,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200348.356368,"s"],"time_commit_end":[1713200348.356616,"s"],"time_input_mgr":[0.000248,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200389195018 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525504 159 1713200389194857
+1713200389195155 2029583 TASK 41 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200389.194856,"s"],"time_commit_end":[1713200389.195129,"s"],"time_input_mgr":[0.000273,"s"],"size_input_mgr":[0.50115966796875,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200389195167 2029583 TASK 35 DONE SUCCESS  0 
+1713200400092330 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-aobozcqhcegepfx 0 41060042 1713200359031843
+1713200400093285 2029583 TASK 10 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200400093439 2029583 TASK 10 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200359.031843,"s"],"time_worker_end":[1713200400.091885,"s"],"time_output_mgr":[5.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200359.030408,"s"],"time_commit_end":[1713200359.030658,"s"],"time_input_mgr":[0.00025,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200400093754 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 281 1713200400093472
+1713200400093892 2029583 TASK 9 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200400.093471,"s"],"time_commit_end":[1713200400.093862,"s"],"time_input_mgr":[0.000391,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200400093906 2029583 TASK 10 DONE SUCCESS  0 
+1713200400101050 2029583 TASK 67 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200404110146 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 RESOURCES {"memory":[200000,"MB"],"disk":[500000,"MB"],"cores":[4,"cores"]}
+1713200406056299 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-uydawgcjretrpwy 0 16859702 1713200389196206
+1713200406060186 2029583 TASK 41 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200406060340 2029583 TASK 41 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200389.196206,"s"],"time_worker_end":[1713200406.055908,"s"],"time_output_mgr":[4.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200389.194856,"s"],"time_commit_end":[1713200389.195129,"s"],"time_input_mgr":[0.000273,"s"],"size_input_mgr":[0.50115966796875,"MB"]}
+1713200406060795 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 393 1713200406060398
+1713200406061104 2029583 TASK 18 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200406.060397,"s"],"time_commit_end":[1713200406.061046,"s"],"time_input_mgr":[0.0006489999999999999,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200406061133 2029583 TASK 41 DONE SUCCESS  0 
+1713200407442213 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yhcjpyvhyxvcoma 0 21637842 1713200385804039
+1713200407442902 2029583 TASK 11 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200407443051 2029583 TASK 11 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200385.804039,"s"],"time_worker_end":[1713200407.441881,"s"],"time_output_mgr":[5.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200385.802798,"s"],"time_commit_end":[1713200385.803049,"s"],"time_input_mgr":[0.000251,"s"],"size_input_mgr":[0.5101594924926758,"MB"]}
+1713200407443611 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 492 1713200407443115
+1713200407443882 2029583 TASK 20 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200407.443114,"s"],"time_commit_end":[1713200407.443855,"s"],"time_input_mgr":[0.000741,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200407443893 2029583 TASK 11 DONE SUCCESS  0 
+1713200407448780 2029583 TASK 68 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200414627367 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-hqnvkmmpcgwwnyy 0 76551805 1713200338075139
+1713200414627883 2029583 TASK 46 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200414627988 2029583 TASK 46 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200338.075139,"s"],"time_worker_end":[1713200414.626944,"s"],"time_output_mgr":[4.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200338.073884,"s"],"time_commit_end":[1713200338.074129,"s"],"time_input_mgr":[0.000245,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200414628059 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 41 1713200414628017
+1713200414628296 2029583 TASK 61 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200414.628016,"s"],"time_commit_end":[1713200414.628269,"s"],"time_input_mgr":[0.000253,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200414628309 2029583 TASK 46 DONE SUCCESS  0 
+1713200416209518 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kbvuyligwukoehh 0 1580886 1713200414628261
+1713200416210136 2029583 TASK 61 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200416210221 2029583 TASK 61 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200414.628261,"s"],"time_worker_end":[1713200416.209147,"s"],"time_output_mgr":[3.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200414.628016,"s"],"time_commit_end":[1713200414.628269,"s"],"time_input_mgr":[0.000253,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200416210308 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 39 1713200416210267
+1713200416210529 2029583 TASK 57 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200416.210266,"s"],"time_commit_end":[1713200416.210503,"s"],"time_input_mgr":[0.000237,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200416210543 2029583 TASK 61 DONE SUCCESS  0 
+1713200416863310 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-erdglsxbzsaanvi 0 10783927 1713200406079008
+1713200416863758 2029583 TASK 18 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200416863848 2029583 TASK 18 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200406.079008,"s"],"time_worker_end":[1713200416.862935,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200406.060397,"s"],"time_commit_end":[1713200406.061046,"s"],"time_input_mgr":[0.0006489999999999999,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200416864191 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 300 1713200416863889
+1713200416864346 2029583 TASK 29 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200416.863888,"s"],"time_commit_end":[1713200416.864321,"s"],"time_input_mgr":[0.000433,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200416864357 2029583 TASK 18 DONE SUCCESS  0 
+1713200416870660 2029583 TASK 69 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200418195469 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ykixydcfpsmpexo 0 1984645 1713200416210463
+1713200418196203 2029583 TASK 57 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200418196358 2029583 TASK 57 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200416.210463,"s"],"time_worker_end":[1713200418.195108,"s"],"time_output_mgr":[6.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200416.210266,"s"],"time_commit_end":[1713200416.210503,"s"],"time_input_mgr":[0.000237,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200418196854 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 410 1713200418196440
+1713200418197161 2029583 TASK 27 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200418.196438,"s"],"time_commit_end":[1713200418.197105,"s"],"time_input_mgr":[0.0006669999999999999,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200418197191 2029583 TASK 57 DONE SUCCESS  0 
+1713200425784848 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-acteyzcbapjpqtr 0 18340141 1713200407444284
+1713200425785455 2029583 TASK 20 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200425785532 2029583 TASK 20 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200407.444284,"s"],"time_worker_end":[1713200425.784425,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200407.443114,"s"],"time_commit_end":[1713200407.443855,"s"],"time_input_mgr":[0.000741,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200425785815 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 249 1713200425785564
+1713200425785958 2029583 TASK 1 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200425.785563,"s"],"time_commit_end":[1713200425.785931,"s"],"time_input_mgr":[0.000368,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200425785973 2029583 TASK 20 DONE SUCCESS  0 
+1713200425792199 2029583 TASK 70 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200429535568 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ylygqicpuvfxjqk 0 11336326 1713200418198831
+1713200429536461 2029583 TASK 27 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200429536654 2029583 TASK 27 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200418.198831,"s"],"time_worker_end":[1713200429.535157,"s"],"time_output_mgr":[5.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200418.196438,"s"],"time_commit_end":[1713200418.197105,"s"],"time_input_mgr":[0.0006669999999999999,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200429536937 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 141 1713200429536793
+1713200429537094 2029583 TASK 52 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200429.536791,"s"],"time_commit_end":[1713200429.537065,"s"],"time_input_mgr":[0.000274,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200429537113 2029583 TASK 27 DONE SUCCESS  0 
+1713200430720366 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-psxbjzqgetceeyo 0 13854968 1713200416864964
+1713200430720978 2029583 TASK 29 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200430721086 2029583 TASK 29 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200416.864964,"s"],"time_worker_end":[1713200430.719932,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200416.863888,"s"],"time_commit_end":[1713200416.864321,"s"],"time_input_mgr":[0.000433,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200430721220 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 61 1713200430721157
+1713200430722954 2029583 TASK 68 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200430.721155,"s"],"time_commit_end":[1713200430.722924,"s"],"time_input_mgr":[0.001769,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200430722976 2029583 TASK 29 DONE SUCCESS  0 
+1713200432124325 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-udddvqriqsddnef 0 2586446 1713200429537464
+1713200432124696 2029583 TASK 52 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200432124781 2029583 TASK 52 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200429.537464,"s"],"time_worker_end":[1713200432.12391,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200429.536791,"s"],"time_commit_end":[1713200429.537065,"s"],"time_input_mgr":[0.000274,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200432125093 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 259 1713200432124833
+1713200432125251 2029583 TASK 23 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200432.124832,"s"],"time_commit_end":[1713200432.125226,"s"],"time_input_mgr":[0.000394,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200432125274 2029583 TASK 52 DONE SUCCESS  0 
+1713200432129228 2029583 TASK 71 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200432129478 2029583 TASK 72 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200433273818 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rpggwzwgbnpwtoo 0 2550523 1713200430722880
+1713200433274251 2029583 TASK 68 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200433274358 2029583 TASK 68 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200430.72288,"s"],"time_worker_end":[1713200433.273403,"s"],"time_output_mgr":[3.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200430.721155,"s"],"time_commit_end":[1713200430.722924,"s"],"time_input_mgr":[0.001769,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200433274492 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 89 1713200433274402
+1713200433274651 2029583 TASK 64 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200433.274401,"s"],"time_commit_end":[1713200433.274628,"s"],"time_input_mgr":[0.000227,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200433274665 2029583 TASK 68 DONE SUCCESS  0 
+1713200433275456 2029583 TASK 73 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200433278587 2029583 TASK 74 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200435512407 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-eizxjmbchggzviz 0 9725098 1713200425786854
+1713200435513095 2029583 TASK 1 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200435513189 2029583 TASK 1 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200425.786854,"s"],"time_worker_end":[1713200435.511952,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200425.785563,"s"],"time_commit_end":[1713200425.785931,"s"],"time_input_mgr":[0.000368,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200435513333 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 429 77 1713200435513254
+1713200435513599 2029583 TASK 66 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200435.513252,"s"],"time_commit_end":[1713200435.513568,"s"],"time_input_mgr":[0.000316,"s"],"size_input_mgr":[0.0004091262817382812,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200435513617 2029583 TASK 1 DONE SUCCESS  0 
+1713200435518954 2029583 TASK 75 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200436360820 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-tivjpetsxlfxjyd 0 3085627 1713200433274805
+1713200436361254 2029583 TASK 64 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200436361335 2029583 TASK 64 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200433.274805,"s"],"time_worker_end":[1713200436.360432,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200433.274401,"s"],"time_commit_end":[1713200433.274628,"s"],"time_input_mgr":[0.000227,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200436361442 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 65 1713200436361376
+1713200436361609 2029583 TASK 65 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200436.361375,"s"],"time_commit_end":[1713200436.361586,"s"],"time_input_mgr":[0.000211,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200436361622 2029583 TASK 64 DONE SUCCESS  0 
+1713200436364895 2029583 TASK 76 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200436365127 2029583 TASK 77 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200437521279 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-phzovhxytfstpuz 0 2007259 1713200435513586
+1713200437522542 2029583 TASK 66 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200437522649 2029583 TASK 66 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200435.513586,"s"],"time_worker_end":[1713200437.520845,"s"],"time_output_mgr":[4.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200435.513252,"s"],"time_commit_end":[1713200435.513568,"s"],"time_input_mgr":[0.000316,"s"],"size_input_mgr":[0.0004091262817382812,"MB"]}
+1713200437522953 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 260 1713200437522691
+1713200437523102 2029583 TASK 14 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200437.52269,"s"],"time_commit_end":[1713200437.523077,"s"],"time_input_mgr":[0.000387,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200437523115 2029583 TASK 66 DONE SUCCESS  0 
+1713200440653937 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-oplxrjvfaycoppn 0 4291719 1713200436361773
+1713200440654692 2029583 TASK 65 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200440654796 2029583 TASK 65 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200436.361773,"s"],"time_worker_end":[1713200440.653492,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200436.361375,"s"],"time_commit_end":[1713200436.361586,"s"],"time_input_mgr":[0.000211,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200440655288 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 435 1713200440654850
+1713200440655422 2029583 TASK 34 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200440.654849,"s"],"time_commit_end":[1713200440.655397,"s"],"time_input_mgr":[0.000548,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200440655435 2029583 TASK 65 DONE SUCCESS  0 
+1713200440659101 2029583 TASK 78 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200440659348 2029583 TASK 79 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200447591050 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-nizpizmtmquaijb 0 15464612 1713200432125948
+1713200447591770 2029583 TASK 23 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200447591872 2029583 TASK 23 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200432.125948,"s"],"time_worker_end":[1713200447.59056,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200432.124832,"s"],"time_commit_end":[1713200432.125226,"s"],"time_input_mgr":[0.000394,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200447592460 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 526 1713200447591915
+1713200447592716 2029583 TASK 30 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200447.591912,"s"],"time_commit_end":[1713200447.592674,"s"],"time_input_mgr":[0.000762,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200447592739 2029583 TASK 23 DONE SUCCESS  0 
+1713200447597903 2029583 TASK 80 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200453824492 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kkkpctknpiclqdn 0 16299377 1713200437524717
+1713200453824923 2029583 TASK 14 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200453825001 2029583 TASK 14 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200437.524717,"s"],"time_worker_end":[1713200453.824094,"s"],"time_output_mgr":[2.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200437.52269,"s"],"time_commit_end":[1713200437.523077,"s"],"time_input_mgr":[0.000387,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200453825111 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 76 1713200453825033
+1713200453825255 2029583 TASK 60 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200453.825032,"s"],"time_commit_end":[1713200453.825229,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200453825292 2029583 TASK 14 DONE SUCCESS  0 
+1713200453830156 2029583 TASK 81 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200457847944 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rwkmttrdsebqlws 0 4021755 1713200453825705
+1713200457848719 2029583 TASK 60 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200457848869 2029583 TASK 60 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200453.825705,"s"],"time_worker_end":[1713200457.84746,"s"],"time_output_mgr":[5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200453.825032,"s"],"time_commit_end":[1713200453.825229,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200457849036 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 91 1713200457848942
+1713200457849179 2029583 TASK 75 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200457.84894,"s"],"time_commit_end":[1713200457.849152,"s"],"time_input_mgr":[0.000212,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200457849192 2029583 TASK 60 DONE SUCCESS  0 
+1713200459993650 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ywawogjnljuudri 0 2143660 1713200457849537
+1713200459994505 2029583 TASK 75 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200459994591 2029583 TASK 75 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200457.849537,"s"],"time_worker_end":[1713200459.993197,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200457.84894,"s"],"time_commit_end":[1713200457.849152,"s"],"time_input_mgr":[0.000212,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200459994882 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 242 1713200459994638
+1713200459995014 2029583 TASK 22 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200459.994637,"s"],"time_commit_end":[1713200459.99499,"s"],"time_input_mgr":[0.000353,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200459995028 2029583 TASK 75 DONE SUCCESS  0 
+1713200459998708 2029583 TASK 82 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200459998942 2029583 TASK 83 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200524132073 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 RESOURCES {"memory":[200000,"MB"],"disk":[500000,"MB"],"cores":[4,"cores"]}
+1713200528809821 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-qwzhbqknoawmfha 0 81216153 1713200447593161
+1713200528810984 2029583 TASK 30 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200528811168 2029583 TASK 30 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200447.593161,"s"],"time_worker_end":[1713200528.809314,"s"],"time_output_mgr":[6.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200447.591912,"s"],"time_commit_end":[1713200447.592674,"s"],"time_input_mgr":[0.000762,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200528811281 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 62 1713200528811217
+1713200528811445 2029583 TASK 69 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200528.811216,"s"],"time_commit_end":[1713200528.811419,"s"],"time_input_mgr":[0.000203,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200528811460 2029583 TASK 30 DONE SUCCESS  0 
+1713200531439884 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-nlwizcjohrrsxam 0 2627647 1713200528811740
+1713200531440383 2029583 TASK 69 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200531440484 2029583 TASK 69 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200528.81174,"s"],"time_worker_end":[1713200531.439387,"s"],"time_output_mgr":[3.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200528.811216,"s"],"time_commit_end":[1713200528.811419,"s"],"time_input_mgr":[0.000203,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200531440611 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 66 1713200531440543
+1713200531440789 2029583 TASK 78 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200531.440542,"s"],"time_commit_end":[1713200531.440762,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200531440804 2029583 TASK 69 DONE SUCCESS  0 
+1713200531446022 2029583 TASK 84 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200531446297 2029583 TASK 85 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200536520610 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kyqbrhyilhvnfbn 0 5079200 1713200531440848
+1713200536521103 2029583 TASK 78 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200536521210 2029583 TASK 78 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200531.440848,"s"],"time_worker_end":[1713200536.520048,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200531.440542,"s"],"time_commit_end":[1713200531.440762,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200536521393 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 136 1713200536521255
+1713200536521542 2029583 TASK 54 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200536.521253,"s"],"time_commit_end":[1713200536.521512,"s"],"time_input_mgr":[0.000259,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200536521556 2029583 TASK 78 DONE SUCCESS  0 
+1713200539339600 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ccikhmmrfqfdgnx 0 2817222 1713200536521851
+1713200539340370 2029583 TASK 54 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200539340513 2029583 TASK 54 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200536.521851,"s"],"time_worker_end":[1713200539.339073,"s"],"time_output_mgr":[4.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200536.521253,"s"],"time_commit_end":[1713200536.521512,"s"],"time_input_mgr":[0.000259,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200539341066 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 473 1713200539340589
+1713200539341337 2029583 TASK 43 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200539.340588,"s"],"time_commit_end":[1713200539.341309,"s"],"time_input_mgr":[0.000721,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200539341350 2029583 TASK 54 DONE SUCCESS  0 
+1713200539345069 2029583 TASK 86 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200539345311 2029583 TASK 87 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200550017953 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-gnmfukzxaznxjgq 0 10675737 1713200539341653
+1713200550018553 2029583 TASK 43 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200550018649 2029583 TASK 43 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200539.341653,"s"],"time_worker_end":[1713200550.01739,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200539.340588,"s"],"time_commit_end":[1713200539.341309,"s"],"time_input_mgr":[0.000721,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200550018747 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 53 1713200550018692
+1713200550018989 2029583 TASK 79 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200550.018691,"s"],"time_commit_end":[1713200550.018963,"s"],"time_input_mgr":[0.000272,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200550019005 2029583 TASK 43 DONE SUCCESS  0 
+1713200551981456 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-dcdfopshlecwgme 0 1962112 1713200550018804
+1713200551981962 2029583 TASK 79 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200551982059 2029583 TASK 79 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200550.018804,"s"],"time_worker_end":[1713200551.980916,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200550.018691,"s"],"time_commit_end":[1713200550.018963,"s"],"time_input_mgr":[0.000272,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200551982180 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 62 1713200551982116
+1713200551982392 2029583 TASK 67 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200551.982115,"s"],"time_commit_end":[1713200551.982359,"s"],"time_input_mgr":[0.000244,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200551982409 2029583 TASK 79 DONE SUCCESS  0 
+1713200557066248 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-lpajspoirhymtjj 0 5083089 1713200551982647
+1713200557066936 2029583 TASK 67 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200557067078 2029583 TASK 67 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200551.982647,"s"],"time_worker_end":[1713200557.065736,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200551.982115,"s"],"time_commit_end":[1713200551.982359,"s"],"time_input_mgr":[0.000244,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200557067467 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 322 1713200557067144
+1713200557067629 2029583 TASK 21 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200557.067143,"s"],"time_commit_end":[1713200557.067602,"s"],"time_input_mgr":[0.000459,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200557067644 2029583 TASK 67 DONE SUCCESS  0 
+1713200557068859 2029583 TASK 88 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200557072824 2029583 TASK 89 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200578383786 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-bqcpeydzipxpetz 0 178288464 1713200400094753
+1713200578384421 2029583 TASK 9 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200578384516 2029583 TASK 9 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200400.094753,"s"],"time_worker_end":[1713200578.383217,"s"],"time_output_mgr":[3.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200400.093471,"s"],"time_commit_end":[1713200400.093862,"s"],"time_input_mgr":[0.000391,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200578384790 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 236 1713200578384552
+1713200578384950 2029583 TASK 40 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200578.384552,"s"],"time_commit_end":[1713200578.384924,"s"],"time_input_mgr":[0.000372,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200578384962 2029583 TASK 9 DONE SUCCESS  0 
+1713200578390120 2029583 TASK 90 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200599991377 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-grgeaqsxalossuc 0 139992967 1713200459997743
+1713200599992320 2029583 TASK 22 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200599992409 2029583 TASK 22 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200459.997743,"s"],"time_worker_end":[1713200599.99071,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200459.994637,"s"],"time_commit_end":[1713200459.99499,"s"],"time_input_mgr":[0.000353,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200599992511 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 63 1713200599992446
+1713200599992648 2029583 TASK 80 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200599.992445,"s"],"time_commit_end":[1713200599.992621,"s"],"time_input_mgr":[0.000176,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200599992666 2029583 TASK 22 DONE SUCCESS  0 
+1713200599997848 2029583 TASK 91 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200603674167 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-uainslilfxxyssz 0 3680057 1713200599993401
+1713200603674923 2029583 TASK 80 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200603675007 2029583 TASK 80 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200599.993401,"s"],"time_worker_end":[1713200603.673458,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200599.992445,"s"],"time_commit_end":[1713200599.992621,"s"],"time_input_mgr":[0.000176,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200603675312 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 249 1713200603675061
+1713200603675470 2029583 TASK 47 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200603.67506,"s"],"time_commit_end":[1713200603.675443,"s"],"time_input_mgr":[0.000383,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200603675483 2029583 TASK 80 DONE SUCCESS  0 
+1713200603679494 2029583 TASK 92 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200603679728 2029583 TASK 93 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200607046955 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-znyldvoihqwzfug 0 28660003 1713200578386376
+1713200607047453 2029583 TASK 40 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200607047558 2029583 TASK 40 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200578.386376,"s"],"time_worker_end":[1713200607.046379,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200578.384552,"s"],"time_commit_end":[1713200578.384924,"s"],"time_input_mgr":[0.000372,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200607047716 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 38 1713200607047676
+1713200607047898 2029583 TASK 85 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200607.047675,"s"],"time_commit_end":[1713200607.047872,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200607047914 2029583 TASK 40 DONE SUCCESS  0 
+1713200609144956 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-byysqibtwiraoil 0 2096783 1713200607047624
+1713200609145891 2029583 TASK 85 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200609145969 2029583 TASK 85 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200607.047624,"s"],"time_worker_end":[1713200609.144407,"s"],"time_output_mgr":[2.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200607.047675,"s"],"time_commit_end":[1713200607.047872,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200609146315 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 273 1713200609146025
+1713200609146565 2029583 TASK 6 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200609.146024,"s"],"time_commit_end":[1713200609.14652,"s"],"time_input_mgr":[0.000496,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200609146602 2029583 TASK 85 DONE SUCCESS  0 
+1713200611947079 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-waryftxbrbxatun 0 171289342 1713200440657078
+1713200611947540 2029583 TASK 34 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200611947627 2029583 TASK 34 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200440.657078,"s"],"time_worker_end":[1713200611.94642,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200440.654849,"s"],"time_commit_end":[1713200440.655397,"s"],"time_input_mgr":[0.000548,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200611947741 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 54 1713200611947685
+1713200611947892 2029583 TASK 92 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200611.947684,"s"],"time_commit_end":[1713200611.947865,"s"],"time_input_mgr":[0.000181,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200611947907 2029583 TASK 34 DONE SUCCESS  0 
+1713200615512376 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-mxjxrpejjrnuzkm 0 3563951 1713200611947823
+1713200615513166 2029583 TASK 92 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200615513287 2029583 TASK 92 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200611.947823,"s"],"time_worker_end":[1713200615.511774,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200611.947684,"s"],"time_commit_end":[1713200611.947865,"s"],"time_input_mgr":[0.000181,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200615513584 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 233 1713200615513348
+1713200615513744 2029583 TASK 38 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200615.513347,"s"],"time_commit_end":[1713200615.513717,"s"],"time_input_mgr":[0.00037,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200615513760 2029583 TASK 92 DONE SUCCESS  0 
+1713200628407146 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-byhewojkiagdpaf 0 19259278 1713200609147225
+1713200628407644 2029583 TASK 6 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200628407744 2029583 TASK 6 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200609.147225,"s"],"time_worker_end":[1713200628.406503,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200609.146024,"s"],"time_commit_end":[1713200609.14652,"s"],"time_input_mgr":[0.000496,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200628407979 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 201 1713200628407776
+1713200628408130 2029583 TASK 28 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200628.407775,"s"],"time_commit_end":[1713200628.408103,"s"],"time_input_mgr":[0.000328,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200628408143 2029583 TASK 6 DONE SUCCESS  0 
+1713200628414251 2029583 TASK 94 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200636919100 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-bzqvfaeqyqiawgj 0 21404223 1713200615514213
+1713200636919644 2029583 TASK 38 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200636919738 2029583 TASK 38 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200615.514213,"s"],"time_worker_end":[1713200636.918436,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200615.513347,"s"],"time_commit_end":[1713200615.513717,"s"],"time_input_mgr":[0.00037,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200636920040 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525504 256 1713200636919782
+1713200636920196 2029583 TASK 36 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200636.919781,"s"],"time_commit_end":[1713200636.920169,"s"],"time_input_mgr":[0.000388,"s"],"size_input_mgr":[0.50115966796875,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200636920213 2029583 TASK 38 DONE SUCCESS  0 
+1713200640896739 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ujnhzduvwkrbenb 0 83828141 1713200557067960
+1713200640897540 2029583 TASK 21 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200640897616 2029583 TASK 21 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200557.06796,"s"],"time_worker_end":[1713200640.896101,"s"],"time_output_mgr":[2.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200557.067143,"s"],"time_commit_end":[1713200557.067602,"s"],"time_input_mgr":[0.000459,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200640897740 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 74 1713200640897664
+1713200640897875 2029583 TASK 59 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200640.897663,"s"],"time_commit_end":[1713200640.89785,"s"],"time_input_mgr":[0.000187,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200640897887 2029583 TASK 21 DONE SUCCESS  0 
+1713200640902805 2029583 TASK 95 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200644365343 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-stijjjmhllvjbyv 0 3466538 1713200640898120
+1713200644365885 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 RESOURCES {"memory":[200000,"MB"],"disk":[500000,"MB"],"cores":[4,"cores"]}
+1713200644365943 2029583 TASK 59 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200644366027 2029583 TASK 59 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200640.89812,"s"],"time_worker_end":[1713200644.364658,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200640.897663,"s"],"time_commit_end":[1713200640.89785,"s"],"time_input_mgr":[0.000187,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200644366120 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 41 1713200644366077
+1713200644366267 2029583 TASK 76 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200644.366076,"s"],"time_commit_end":[1713200644.366238,"s"],"time_input_mgr":[0.000162,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200644366280 2029583 TASK 59 DONE SUCCESS  0 
+1713200644370047 2029583 TASK 96 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200644370297 2029583 TASK 97 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200648400753 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-zyovvnphhvnwsar 0 4033014 1713200644367031
+1713200648401566 2029583 TASK 76 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200648401727 2029583 TASK 76 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200644.367031,"s"],"time_worker_end":[1713200648.400045,"s"],"time_output_mgr":[5.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200644.366076,"s"],"time_commit_end":[1713200644.366238,"s"],"time_input_mgr":[0.000162,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200648402009 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 157 1713200648401848
+1713200648402306 2029583 TASK 62 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200648.401846,"s"],"time_commit_end":[1713200648.402234,"s"],"time_input_mgr":[0.000388,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200648402325 2029583 TASK 76 DONE SUCCESS  0 
+1713200651261248 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-jlkhknbszvmgijt 0 2857604 1713200648402998
+1713200651261682 2029583 TASK 62 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200651261772 2029583 TASK 62 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200648.402998,"s"],"time_worker_end":[1713200651.260602,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200648.401846,"s"],"time_commit_end":[1713200648.402234,"s"],"time_input_mgr":[0.000388,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200651261896 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 70 1713200651261824
+1713200651262147 2029583 TASK 93 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200651.261823,"s"],"time_commit_end":[1713200651.262121,"s"],"time_input_mgr":[0.000298,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200651262159 2029583 TASK 62 DONE SUCCESS  0 
+1713200651265761 2029583 TASK 98 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200651265993 2029583 TASK 99 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200653108570 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rfbbgdsewnxmquu 0 1846094 1713200651261813
+1713200653109326 2029583 TASK 93 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200653109408 2029583 TASK 93 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200651.261813,"s"],"time_worker_end":[1713200653.107907,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200651.261823,"s"],"time_commit_end":[1713200651.262121,"s"],"time_input_mgr":[0.000298,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200653109540 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 60 1713200653109479
+1713200653109707 2029583 TASK 90 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200653.109477,"s"],"time_commit_end":[1713200653.109681,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200653109722 2029583 TASK 93 DONE SUCCESS  0 
+1713200657704067 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-girsdqparabjpjv 0 20782684 1713200636920620
+1713200657704825 2029583 TASK 36 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200657704914 2029583 TASK 36 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200636.92062,"s"],"time_worker_end":[1713200657.703304,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200636.919781,"s"],"time_commit_end":[1713200636.920169,"s"],"time_input_mgr":[0.000388,"s"],"size_input_mgr":[0.50115966796875,"MB"]}
+1713200657705071 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 56 1713200657705013
+1713200657705244 2029583 TASK 71 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200657.705011,"s"],"time_commit_end":[1713200657.705217,"s"],"time_input_mgr":[0.000206,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200657705263 2029583 TASK 36 DONE SUCCESS  0 
+1713200657706275 2029583 TASK 100 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200660524087 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-lqbficjwvxgpcbw 0 2818281 1713200657705115
+1713200660524905 2029583 TASK 71 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200660524999 2029583 TASK 71 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200657.705115,"s"],"time_worker_end":[1713200660.523396,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200657.705011,"s"],"time_commit_end":[1713200657.705217,"s"],"time_input_mgr":[0.000206,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200660525143 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 63 1713200660525078
+1713200660525307 2029583 TASK 74 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200660.525077,"s"],"time_commit_end":[1713200660.525279,"s"],"time_input_mgr":[0.000202,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200660525326 2029583 TASK 71 DONE SUCCESS  0 
+1713200664945959 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-lixyummpvrskuwx 0 4420078 1713200660525179
+1713200664946409 2029583 TASK 74 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200664946493 2029583 TASK 74 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200660.525179,"s"],"time_worker_end":[1713200664.945257,"s"],"time_output_mgr":[2.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200660.525077,"s"],"time_commit_end":[1713200660.525279,"s"],"time_input_mgr":[0.000202,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200664946590 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 44 1713200664946545
+1713200664946798 2029583 TASK 77 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200664.946544,"s"],"time_commit_end":[1713200664.946768,"s"],"time_input_mgr":[0.000224,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200664946812 2029583 TASK 74 DONE SUCCESS  0 
+1713200666994175 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rfxeiuxnfuamxjp 0 2047000 1713200664946426
+1713200666994955 2029583 TASK 77 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200666995139 2029583 TASK 77 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200664.946426,"s"],"time_worker_end":[1713200666.993426,"s"],"time_output_mgr":[6.600000000000001e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200664.946544,"s"],"time_commit_end":[1713200664.946768,"s"],"time_input_mgr":[0.000224,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200666995409 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 83 1713200666995323
+1713200666995690 2029583 TASK 83 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200666.995321,"s"],"time_commit_end":[1713200666.995664,"s"],"time_input_mgr":[0.000343,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200666995706 2029583 TASK 77 DONE SUCCESS  0 
+1713200668723913 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kiayneixnkyxzgw 0 15613263 1713200653109911
+1713200668724313 2029583 TASK 90 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200668724399 2029583 TASK 90 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200653.109911,"s"],"time_worker_end":[1713200668.723174,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200653.109477,"s"],"time_commit_end":[1713200653.109681,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200668724513 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 64 1713200668724447
+1713200668724647 2029583 TASK 58 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200668.724445,"s"],"time_commit_end":[1713200668.724622,"s"],"time_input_mgr":[0.000177,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200668724663 2029583 TASK 90 DONE SUCCESS  0 
+1713200668729356 2029583 TASK 101 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200668729607 2029583 TASK 102 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200668906675 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ffzkebzbnpgcjnj 0 1910717 1713200666995310
+1713200668907036 2029583 TASK 83 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200668907117 2029583 TASK 83 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200666.99531,"s"],"time_worker_end":[1713200668.906027,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200666.995321,"s"],"time_commit_end":[1713200666.995664,"s"],"time_input_mgr":[0.000343,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200668907222 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 55 1713200668907165
+1713200668907494 2029583 TASK 94 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200668.907164,"s"],"time_commit_end":[1713200668.907464,"s"],"time_input_mgr":[0.0003,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200668907509 2029583 TASK 83 DONE SUCCESS  0 
+1713200668908155 2029583 TASK 103 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200671631166 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-cuerfoywxgclsxw 0 2905907 1713200668724567
+1713200671631948 2029583 TASK 58 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200671632025 2029583 TASK 58 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200668.724567,"s"],"time_worker_end":[1713200671.630474,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200668.724445,"s"],"time_commit_end":[1713200668.724622,"s"],"time_input_mgr":[0.000177,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200671632338 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534941 254 1713200671632082
+1713200671632494 2029583 TASK 16 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200671.632081,"s"],"time_commit_end":[1713200671.632467,"s"],"time_input_mgr":[0.000386,"s"],"size_input_mgr":[0.5101594924926758,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200671632518 2029583 TASK 58 DONE SUCCESS  0 
+1713200671633320 2029583 TASK 104 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200671636486 2029583 TASK 105 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200672022447 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xbsfmhqjnnkidor 0 43613131 1713200628408614
+1713200672023055 2029583 TASK 28 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200672023190 2029583 TASK 28 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200628.408614,"s"],"time_worker_end":[1713200672.021745,"s"],"time_output_mgr":[5.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200628.407775,"s"],"time_commit_end":[1713200628.408103,"s"],"time_input_mgr":[0.000328,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200672023381 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 100 1713200672023278
+1713200672023809 2029583 TASK 63 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200672.023277,"s"],"time_commit_end":[1713200672.023752,"s"],"time_input_mgr":[0.000475,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200672023841 2029583 TASK 28 DONE SUCCESS  0 
+1713200672292955 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-jwbcozxjkawccgl 0 3385092 1713200668907198
+1713200672293622 2029583 TASK 94 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200672293745 2029583 TASK 94 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200668.907198,"s"],"time_worker_end":[1713200672.29229,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200668.907164,"s"],"time_commit_end":[1713200668.907464,"s"],"time_input_mgr":[0.0003,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200672293893 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 79 1713200672293811
+1713200672294193 2029583 TASK 84 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200672.29381,"s"],"time_commit_end":[1713200672.294171,"s"],"time_input_mgr":[0.000361,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200672294205 2029583 TASK 94 DONE SUCCESS  0 
+1713200672294799 2029583 TASK 106 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200672297433 2029583 TASK 107 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674469219 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rujfszuskmwqkgl 0 2174705 1713200672293832
+1713200674469829 2029583 TASK 84 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200674469976 2029583 TASK 84 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200672.293832,"s"],"time_worker_end":[1713200674.468537,"s"],"time_output_mgr":[4.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200672.29381,"s"],"time_commit_end":[1713200672.294171,"s"],"time_input_mgr":[0.000361,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200674470126 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1382 67 1713200674470056
+1713200674470593 2029583 TASK 103 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200674.470055,"s"],"time_commit_end":[1713200674.470535,"s"],"time_input_mgr":[0.00048,"s"],"size_input_mgr":[0.001317977905273438,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674470624 2029583 TASK 84 DONE SUCCESS  0 
+1713200674512456 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-efyziytrrenjnqv 0 2488488 1713200672023368
+1713200674513015 2029583 TASK 63 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200674513142 2029583 TASK 63 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200672.023368,"s"],"time_worker_end":[1713200674.511856,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200672.023277,"s"],"time_commit_end":[1713200672.023752,"s"],"time_input_mgr":[0.000475,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200674513294 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 86 1713200674513206
+1713200674513444 2029583 TASK 107 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200674.513205,"s"],"time_commit_end":[1713200674.513422,"s"],"time_input_mgr":[0.000217,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674513455 2029583 TASK 63 DONE SUCCESS  0 
+1713200674516658 2029583 TASK 108 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674516896 2029583 TASK 109 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674561077 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-aavhntejjyyldfa 0 90290 1713200674470150
+1713200674561692 2029583 TASK 103 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200674561856 2029583 TASK 103 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200674.47015,"s"],"time_worker_end":[1713200674.56044,"s"],"time_output_mgr":[6.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200674.470055,"s"],"time_commit_end":[1713200674.470535,"s"],"time_input_mgr":[0.00048,"s"],"size_input_mgr":[0.001317977905273438,"MB"]}
+1713200674562014 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 80 1713200674561931
+1713200674562404 2029583 TASK 82 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200674.561929,"s"],"time_commit_end":[1713200674.562378,"s"],"time_input_mgr":[0.000449,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200674562416 2029583 TASK 103 DONE SUCCESS  0 
+1713200677386305 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-qvbnhrnwyhmzlwb 0 2823511 1713200674562006
+1713200677387129 2029583 TASK 82 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200677387210 2029583 TASK 82 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200674.562006,"s"],"time_worker_end":[1713200677.385517,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200674.561929,"s"],"time_commit_end":[1713200674.562378,"s"],"time_input_mgr":[0.000449,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200677387312 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 47 1713200677387264
+1713200677387471 2029583 TASK 108 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200677.387258,"s"],"time_commit_end":[1713200677.387444,"s"],"time_input_mgr":[0.000186,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200677387484 2029583 TASK 82 DONE SUCCESS  0 
+1713200677388004 2029583 TASK 110 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200678044777 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xxltmzahrsftock 0 3530642 1713200674513324
+1713200678045381 2029583 TASK 107 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200678045490 2029583 TASK 107 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200674.513324,"s"],"time_worker_end":[1713200678.043966,"s"],"time_output_mgr":[3.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200674.513205,"s"],"time_commit_end":[1713200674.513422,"s"],"time_input_mgr":[0.000217,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200678045658 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 63 1713200678045593
+1713200678045815 2029583 TASK 91 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200678.045591,"s"],"time_commit_end":[1713200678.045787,"s"],"time_input_mgr":[0.000196,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200678045834 2029583 TASK 107 DONE SUCCESS  0 
+1713200680560080 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-pkyngjtvqzgbnlj 0 3172001 1713200677387360
+1713200680560496 2029583 TASK 108 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200680560613 2029583 TASK 108 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200677.38736,"s"],"time_worker_end":[1713200680.559361,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200677.387258,"s"],"time_commit_end":[1713200677.387444,"s"],"time_input_mgr":[0.000186,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200680560761 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 49 1713200680560710
+1713200680560996 2029583 TASK 109 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200680.560707,"s"],"time_commit_end":[1713200680.560964,"s"],"time_input_mgr":[0.000257,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200680561012 2029583 TASK 108 DONE SUCCESS  0 
+1713200682129981 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yudchjxwbmobnva 0 1568694 1713200680560589
+1713200682130847 2029583 TASK 109 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200682130940 2029583 TASK 109 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200680.560589,"s"],"time_worker_end":[1713200682.129283,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200680.560707,"s"],"time_commit_end":[1713200680.560964,"s"],"time_input_mgr":[0.000257,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200682131785 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525503 758 1713200682131024
+1713200682131963 2029583 TASK 32 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200682.131022,"s"],"time_commit_end":[1713200682.131918,"s"],"time_input_mgr":[0.000896,"s"],"size_input_mgr":[0.5011587142944336,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200682131979 2029583 TASK 109 DONE SUCCESS  0 
+1713200685108116 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yrliapcjzijapuh 0 13474607 1713200671632767
+1713200685108524 2029583 TASK 16 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200685108614 2029583 TASK 16 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200671.632767,"s"],"time_worker_end":[1713200685.107374,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200671.632081,"s"],"time_commit_end":[1713200671.632467,"s"],"time_input_mgr":[0.000386,"s"],"size_input_mgr":[0.5101594924926758,"MB"]}
+1713200685108769 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 52 1713200685108715
+1713200685108951 2029583 TASK 89 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200685.108712,"s"],"time_commit_end":[1713200685.108923,"s"],"time_input_mgr":[0.000211,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200685108964 2029583 TASK 16 DONE SUCCESS  0 
+1713200685117525 2029583 TASK 111 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200687770447 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-soeebylqscywtla 0 9723847 1713200678045881
+1713200687771320 2029583 TASK 91 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200687771424 2029583 TASK 91 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200678.045881,"s"],"time_worker_end":[1713200687.769728,"s"],"time_output_mgr":[3.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200678.045591,"s"],"time_commit_end":[1713200678.045787,"s"],"time_input_mgr":[0.000196,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200687771551 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 49 1713200687771500
+1713200687771785 2029583 TASK 73 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200687.771498,"s"],"time_commit_end":[1713200687.771758,"s"],"time_input_mgr":[0.00026,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200687771803 2029583 TASK 91 DONE SUCCESS  0 
+1713200687772681 2029583 TASK 112 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200687776033 2029583 TASK 113 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200689938736 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-qhljcixzbubmzgh 0 2166633 1713200687771367
+1713200689939085 2029583 TASK 73 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200689939176 2029583 TASK 73 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200687.771367,"s"],"time_worker_end":[1713200689.938,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200687.771498,"s"],"time_commit_end":[1713200687.771758,"s"],"time_input_mgr":[0.00026,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200689939317 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 60 1713200689939255
+1713200689939583 2029583 TASK 112 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200689.939254,"s"],"time_commit_end":[1713200689.939557,"s"],"time_input_mgr":[0.000303,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200689939597 2029583 TASK 73 DONE SUCCESS  0 
+1713200690283057 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-veokpfuobwcaymo 0 5173582 1713200685108817
+1713200690283419 2029583 TASK 89 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200690283502 2029583 TASK 89 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200685.108817,"s"],"time_worker_end":[1713200690.282399,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200685.108712,"s"],"time_commit_end":[1713200685.108923,"s"],"time_input_mgr":[0.000211,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200690283586 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 42 1713200690283542
+1713200690283854 2029583 TASK 88 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200690.283542,"s"],"time_commit_end":[1713200690.283826,"s"],"time_input_mgr":[0.000284,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200690283869 2029583 TASK 89 DONE SUCCESS  0 
+1713200691806399 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-grfrnnjhrnxwmxs 0 1866456 1713200689939189
+1713200691806765 2029583 TASK 112 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200691806851 2029583 TASK 112 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200689.939189,"s"],"time_worker_end":[1713200691.805645,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200689.939254,"s"],"time_commit_end":[1713200689.939557,"s"],"time_input_mgr":[0.000303,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200691806969 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 58 1713200691806910
+1713200691807157 2029583 TASK 86 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200691.806909,"s"],"time_commit_end":[1713200691.807132,"s"],"time_input_mgr":[0.000223,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200691807169 2029583 TASK 112 DONE SUCCESS  0 
+1713200692492542 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-tglonlmircnucou 0 2208407 1713200690283426
+1713200692493422 2029583 TASK 88 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200692493493 2029583 TASK 88 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200690.283426,"s"],"time_worker_end":[1713200692.491833,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200690.283542,"s"],"time_commit_end":[1713200690.283826,"s"],"time_input_mgr":[0.000284,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200692493570 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 40 1713200692493529
+1713200692493799 2029583 TASK 104 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200692.493528,"s"],"time_commit_end":[1713200692.493773,"s"],"time_input_mgr":[0.000245,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200692493811 2029583 TASK 88 DONE SUCCESS  0 
+1713200695036356 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-clkyzrtuzpbhska 0 2542286 1713200692493369
+1713200695036852 2029583 TASK 104 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200695036945 2029583 TASK 104 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200692.493369,"s"],"time_worker_end":[1713200695.035655,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200692.493528,"s"],"time_commit_end":[1713200692.493773,"s"],"time_input_mgr":[0.000245,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200695037137 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 136 1713200695036999
+1713200695037285 2029583 TASK 31 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200695.036999,"s"],"time_commit_end":[1713200695.03725,"s"],"time_input_mgr":[0.000251,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200695037298 2029583 TASK 104 DONE SUCCESS  0 
+1713200695475160 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-svnqivnayplepnc 0 3666783 1713200691807616
+1713200695475541 2029583 TASK 86 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200695475626 2029583 TASK 86 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200691.807616,"s"],"time_worker_end":[1713200695.474399,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200691.806909,"s"],"time_commit_end":[1713200691.807132,"s"],"time_input_mgr":[0.000223,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200695475734 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 54 1713200695475678
+1713200695476012 2029583 TASK 105 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200695.475677,"s"],"time_commit_end":[1713200695.475984,"s"],"time_input_mgr":[0.000307,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200695476027 2029583 TASK 86 DONE SUCCESS  0 
+1713200697600242 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-dszlnfmduskxfsb 0 15467397 1713200682132052
+1713200697601074 2029583 TASK 32 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200697601165 2029583 TASK 32 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200682.132052,"s"],"time_worker_end":[1713200697.599449,"s"],"time_output_mgr":[3.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200682.131022,"s"],"time_commit_end":[1713200682.131918,"s"],"time_input_mgr":[0.000896,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200697601469 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534939 263 1713200697601205
+1713200697601615 2029583 TASK 5 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200697.601204,"s"],"time_commit_end":[1713200697.60159,"s"],"time_input_mgr":[0.000386,"s"],"size_input_mgr":[0.510157585144043,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200697601631 2029583 TASK 32 DONE SUCCESS  0 
+1713200698587135 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rlhgtxclaqddirc 0 3110868 1713200695475591
+1713200698587479 2029583 TASK 105 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200698587555 2029583 TASK 105 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200695.475591,"s"],"time_worker_end":[1713200698.586459,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200695.475677,"s"],"time_commit_end":[1713200695.475984,"s"],"time_input_mgr":[0.000307,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200698587715 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 525502 123 1713200698587590
+1713200698587843 2029583 TASK 50 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200698.587589,"s"],"time_commit_end":[1713200698.587819,"s"],"time_input_mgr":[0.00023,"s"],"size_input_mgr":[0.5011577606201172,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200698587856 2029583 TASK 105 DONE SUCCESS  0 
+1713200709862980 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xprwgcgzhhjqbbp 0 11273876 1713200698588263
+1713200709863570 2029583 TASK 50 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200709863724 2029583 TASK 50 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200698.588263,"s"],"time_worker_end":[1713200709.862139,"s"],"time_output_mgr":[5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200698.587589,"s"],"time_commit_end":[1713200698.587819,"s"],"time_input_mgr":[0.00023,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200709863857 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 61 1713200709863794
+1713200709864023 2029583 TASK 101 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200709.863791,"s"],"time_commit_end":[1713200709.863995,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200709864038 2029583 TASK 50 DONE SUCCESS  0 
+1713200715373621 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-jwknxrhwepckwug 0 20334280 1713200695038435
+1713200715374017 2029583 TASK 31 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200715374113 2029583 TASK 31 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200695.038435,"s"],"time_worker_end":[1713200715.372715,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200695.036999,"s"],"time_commit_end":[1713200695.03725,"s"],"time_input_mgr":[0.000251,"s"],"size_input_mgr":[0.5011577606201172,"MB"]}
+1713200715374199 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 42 1713200715374155
+1713200715374429 2029583 TASK 99 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200715.374154,"s"],"time_commit_end":[1713200715.374389,"s"],"time_input_mgr":[0.000235,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200715374443 2029583 TASK 31 DONE SUCCESS  0 
+1713200715375242 2029583 TASK 114 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200717483615 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-dalclrxhrvxtsoc 0 2108680 1713200715374034
+1713200717484075 2029583 TASK 99 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200717484223 2029583 TASK 99 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200715.374034,"s"],"time_worker_end":[1713200717.482714,"s"],"time_output_mgr":[4.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200715.374154,"s"],"time_commit_end":[1713200715.374389,"s"],"time_input_mgr":[0.000235,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200717484354 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 36 1713200717484316
+1713200717484571 2029583 TASK 106 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200717.484315,"s"],"time_commit_end":[1713200717.484539,"s"],"time_input_mgr":[0.000224,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200717484586 2029583 TASK 99 DONE SUCCESS  0 
+1713200719705150 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-mrvxvriqhtjjkpx 0 2220293 1713200717484136
+1713200719706020 2029583 TASK 106 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200719706096 2029583 TASK 106 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200717.484136,"s"],"time_worker_end":[1713200719.704429,"s"],"time_output_mgr":[2.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200717.484315,"s"],"time_commit_end":[1713200717.484539,"s"],"time_input_mgr":[0.000224,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200719706198 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 43 1713200719706143
+1713200719706362 2029583 TASK 95 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200719.706142,"s"],"time_commit_end":[1713200719.706325,"s"],"time_input_mgr":[0.000183,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200719706375 2029583 TASK 106 DONE SUCCESS  0 
+1713200728153997 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-qznlqqwcdvlxcal 0 8447013 1713200719706217
+1713200728154459 2029583 TASK 95 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200728154547 2029583 TASK 95 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200719.706217,"s"],"time_worker_end":[1713200728.15323,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200719.706142,"s"],"time_commit_end":[1713200719.706325,"s"],"time_input_mgr":[0.000183,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200728154627 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 39 1713200728154587
+1713200728154843 2029583 TASK 102 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200728.154585,"s"],"time_commit_end":[1713200728.154816,"s"],"time_input_mgr":[0.000231,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200728154858 2029583 TASK 95 DONE SUCCESS  0 
+1713200728162125 2029583 TASK 115 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200728162428 2029583 TASK 116 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200729308445 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-bjmahujlfthchet 0 125631631 1713200603676057
+1713200729309427 2029583 TASK 47 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200729309574 2029583 TASK 47 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200603.676057,"s"],"time_worker_end":[1713200729.307688,"s"],"time_output_mgr":[5.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200603.67506,"s"],"time_commit_end":[1713200603.675443,"s"],"time_input_mgr":[0.000383,"s"],"size_input_mgr":[0.5011587142944336,"MB"]}
+1713200729309757 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 77 1713200729309677
+1713200729309921 2029583 TASK 115 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200729.309675,"s"],"time_commit_end":[1713200729.309897,"s"],"time_input_mgr":[0.000222,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200729309937 2029583 TASK 47 DONE SUCCESS  0 
+1713200729310476 2029583 TASK 117 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200730149698 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vmjufzxnnknburq 0 20284985 1713200709863933
+1713200730150170 2029583 TASK 101 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200730150319 2029583 TASK 101 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200709.863933,"s"],"time_worker_end":[1713200730.148918,"s"],"time_output_mgr":[5.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200709.863791,"s"],"time_commit_end":[1713200709.863995,"s"],"time_input_mgr":[0.000204,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200730150424 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 62 1713200730150361
+1713200730150566 2029583 TASK 81 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200730.15036,"s"],"time_commit_end":[1713200730.150542,"s"],"time_input_mgr":[0.000182,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200730150579 2029583 TASK 101 DONE SUCCESS  0 
+1713200731059359 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yxekhceimdcyvix 0 2903803 1713200728154730
+1713200731059843 2029583 TASK 102 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200731059988 2029583 TASK 102 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200728.15473,"s"],"time_worker_end":[1713200731.058533,"s"],"time_output_mgr":[5.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200728.154585,"s"],"time_commit_end":[1713200728.154816,"s"],"time_input_mgr":[0.000231,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200731060470 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 373 1713200731060071
+1713200731060738 2029583 TASK 3 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200731.060069,"s"],"time_commit_end":[1713200731.060691,"s"],"time_input_mgr":[0.000622,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200731060771 2029583 TASK 102 DONE SUCCESS  0 
+1713200732950362 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kewcenqhkoximax 0 2798912 1713200730150593
+1713200732950794 2029583 TASK 81 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200732950910 2029583 TASK 81 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200730.150593,"s"],"time_worker_end":[1713200732.949505,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200730.15036,"s"],"time_commit_end":[1713200730.150542,"s"],"time_input_mgr":[0.000182,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200732951038 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 56 1713200732950980
+1713200732951297 2029583 TASK 116 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200732.950978,"s"],"time_commit_end":[1713200732.951269,"s"],"time_input_mgr":[0.000291,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200732951311 2029583 TASK 81 DONE SUCCESS  0 
+1713200732955470 2029583 TASK 118 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200732955710 2029583 TASK 119 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200734741603 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rptrawxawiwqthp 0 1790012 1713200732950796
+1713200734742431 2029583 TASK 116 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200734742511 2029583 TASK 116 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200732.950796,"s"],"time_worker_end":[1713200734.740808,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200732.950978,"s"],"time_commit_end":[1713200732.951269,"s"],"time_input_mgr":[0.000291,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200734742640 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 63 1713200734742576
+1713200734742796 2029583 TASK 96 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200734.742574,"s"],"time_commit_end":[1713200734.74277,"s"],"time_input_mgr":[0.000196,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200734742810 2029583 TASK 116 DONE SUCCESS  0 
+1713200736642869 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ngeverrgavuxilh 0 1899569 1713200734742554
+1713200736643191 2029583 TASK 96 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200736643295 2029583 TASK 96 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200734.742554,"s"],"time_worker_end":[1713200736.642123,"s"],"time_output_mgr":[3.2e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200734.742574,"s"],"time_commit_end":[1713200734.74277,"s"],"time_input_mgr":[0.000196,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200736643423 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 63 1713200736643357
+1713200736643622 2029583 TASK 113 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200736.643355,"s"],"time_commit_end":[1713200736.643594,"s"],"time_input_mgr":[0.000239,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200736643639 2029583 TASK 96 DONE SUCCESS  0 
+1713200737894184 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-jzkcjwuzziemnhn 0 8583665 1713200729309787
+1713200737894450 2029583 TASK 115 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200737894522 2029583 TASK 115 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200729.309787,"s"],"time_worker_end":[1713200737.893452,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200729.309675,"s"],"time_commit_end":[1713200729.309897,"s"],"time_input_mgr":[0.000222,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200737894608 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 43 1713200737894563
+1713200737894768 2029583 TASK 111 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200737.894562,"s"],"time_commit_end":[1713200737.894743,"s"],"time_input_mgr":[0.000181,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200737894781 2029583 TASK 115 DONE SUCCESS  0 
+1713200740653991 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-xswkrdykootkwnc 0 2758646 1713200737894538
+1713200740655054 2029583 TASK 111 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200740655194 2029583 TASK 111 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200737.894538,"s"],"time_worker_end":[1713200740.653184,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200737.894562,"s"],"time_commit_end":[1713200737.894743,"s"],"time_input_mgr":[0.000181,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200740655324 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1382 34 1713200740655288
+1713200740655551 2029583 TASK 110 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200740.655286,"s"],"time_commit_end":[1713200740.655521,"s"],"time_input_mgr":[0.000235,"s"],"size_input_mgr":[0.001317977905273438,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200740655568 2029583 TASK 111 DONE SUCCESS  0 
+1713200740656716 2029583 TASK 120 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200740660893 2029583 TASK 121 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200740828237 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yoeyudpurcaujrk 0 172428 1713200740655090
+1713200740828535 2029583 TASK 110 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200740828603 2029583 TASK 110 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200740.65509,"s"],"time_worker_end":[1713200740.827518,"s"],"time_output_mgr":[2.4e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200740.655286,"s"],"time_commit_end":[1713200740.655521,"s"],"time_input_mgr":[0.000235,"s"],"size_input_mgr":[0.001317977905273438,"MB"]}
+1713200740828678 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 33 1713200740828643
+1713200740828885 2029583 TASK 120 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200740.828642,"s"],"time_commit_end":[1713200740.828862,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200740828912 2029583 TASK 110 DONE SUCCESS  0 
+1713200742785304 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-bowudybywjvbydl 0 1956118 1713200740828413
+1713200742785593 2029583 TASK 120 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200742785676 2029583 TASK 120 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200740.828413,"s"],"time_worker_end":[1713200742.784531,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200740.828642,"s"],"time_commit_end":[1713200740.828862,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200742785775 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 789 40 1713200742785734
+1713200742786154 2029583 TASK 114 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200742.785733,"s"],"time_commit_end":[1713200742.786117,"s"],"time_input_mgr":[0.000384,"s"],"size_input_mgr":[0.0007524490356445312,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200742786171 2029583 TASK 120 DONE SUCCESS  0 
+1713200745075433 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-fewupxkqhrueasy 0 2288928 1713200742785774
+1713200745078612 2029583 TASK 114 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200745078718 2029583 TASK 114 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200742.785774,"s"],"time_worker_end":[1713200745.074702,"s"],"time_output_mgr":[3.9e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200742.785733,"s"],"time_commit_end":[1713200742.786117,"s"],"time_input_mgr":[0.000384,"s"],"size_input_mgr":[0.0007524490356445312,"MB"]}
+1713200745078833 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 43 1713200745078789
+1713200745079111 2029583 TASK 97 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200745.078787,"s"],"time_commit_end":[1713200745.079073,"s"],"time_input_mgr":[0.000286,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200745079132 2029583 TASK 114 DONE SUCCESS  0 
+1713200747249279 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-uipvcrovfddfyzk 0 2169855 1713200745078621
+1713200747249534 2029583 TASK 97 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200747249633 2029583 TASK 97 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200745.078621,"s"],"time_worker_end":[1713200747.248476,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200745.078787,"s"],"time_commit_end":[1713200745.079073,"s"],"time_input_mgr":[0.000286,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200747249748 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 54 1713200747249692
+1713200747249920 2029583 TASK 121 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200747.24969,"s"],"time_commit_end":[1713200747.249895,"s"],"time_input_mgr":[0.000205,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200747249934 2029583 TASK 97 DONE SUCCESS  0 
+1713200750642163 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-quncixmgdpxfkdt 0 3391700 1713200747249685
+1713200750643102 2029583 TASK 121 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200750643239 2029583 TASK 121 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200747.249685,"s"],"time_worker_end":[1713200750.641385,"s"],"time_output_mgr":[5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200747.24969,"s"],"time_commit_end":[1713200747.249895,"s"],"time_input_mgr":[0.000205,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200750643346 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 36 1713200750643309
+1713200750643579 2029583 TASK 72 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200750.643307,"s"],"time_commit_end":[1713200750.643547,"s"],"time_input_mgr":[0.00024,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200750643594 2029583 TASK 121 DONE SUCCESS  0 
+1713200753034412 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-owhcfytfmtxwyul 0 2390554 1713200750643095
+1713200753034735 2029583 TASK 72 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200753034813 2029583 TASK 72 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200750.643095,"s"],"time_worker_end":[1713200753.033649,"s"],"time_output_mgr":[2.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200750.643307,"s"],"time_commit_end":[1713200750.643547,"s"],"time_input_mgr":[0.00024,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200753034926 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 789 45 1713200753034880
+1713200753035217 2029583 TASK 100 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200753.034878,"s"],"time_commit_end":[1713200753.03519,"s"],"time_input_mgr":[0.000312,"s"],"size_input_mgr":[0.0007524490356445312,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200753035232 2029583 TASK 72 DONE SUCCESS  0 
+1713200755372193 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-fxwgbltvsxkwqfj 0 2336148 1713200753035264
+1713200755373050 2029583 TASK 100 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200755373143 2029583 TASK 100 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200753.035264,"s"],"time_worker_end":[1713200755.371412,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200753.034878,"s"],"time_commit_end":[1713200753.03519,"s"],"time_input_mgr":[0.000312,"s"],"size_input_mgr":[0.0007524490356445312,"MB"]}
+1713200755373292 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 77 1713200755373213
+1713200755373447 2029583 TASK 70 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200755.373211,"s"],"time_commit_end":[1713200755.373419,"s"],"time_input_mgr":[0.000208,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200755373469 2029583 TASK 100 DONE SUCCESS  0 
+1713200755976156 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yxtsvbxgcmqdzah 0 19331998 1713200736643407
+1713200755976376 2029583 TASK 113 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200755976456 2029583 TASK 113 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200736.643407,"s"],"time_worker_end":[1713200755.975405,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200736.643355,"s"],"time_commit_end":[1713200736.643594,"s"],"time_input_mgr":[0.000239,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200755976555 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 53 1713200755976500
+1713200755976723 2029583 TASK 98 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200755.976499,"s"],"time_commit_end":[1713200755.976696,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200755976737 2029583 TASK 113 DONE SUCCESS  0 
+1713200758233191 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-wdzlludmujgapqe 0 2255984 1713200755976477
+1713200758233442 2029583 TASK 98 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200758233538 2029583 TASK 98 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200755.976477,"s"],"time_worker_end":[1713200758.232461,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200755.976499,"s"],"time_commit_end":[1713200755.976696,"s"],"time_input_mgr":[0.000197,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200758233634 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 38 1713200758233594
+1713200758233847 2029583 TASK 119 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200758.233593,"s"],"time_commit_end":[1713200758.233814,"s"],"time_input_mgr":[0.000221,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200758233860 2029583 TASK 98 DONE SUCCESS  0 
+1713200758410042 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-alhmrlabrwknkcr 0 3036132 1713200755373234
+1713200758410233 2029583 TASK 70 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200758410309 2029583 TASK 70 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200755.373234,"s"],"time_worker_end":[1713200758.409366,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200755.373211,"s"],"time_commit_end":[1713200755.373419,"s"],"time_input_mgr":[0.000208,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200758410384 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 789 35 1713200758410348
+1713200758410706 2029583 TASK 117 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200758.410347,"s"],"time_commit_end":[1713200758.410674,"s"],"time_input_mgr":[0.000327,"s"],"size_input_mgr":[0.0007524490356445312,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200758410720 2029583 TASK 70 DONE SUCCESS  0 
+1713200758416326 2029583 TASK 122 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200758416704 2029583 TASK 123 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200760180647 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ckactmtsqwhphwh 0 1769547 1713200758410359
+1713200760181519 2029583 TASK 117 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200760181600 2029583 TASK 117 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200758.410359,"s"],"time_worker_end":[1713200760.179906,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200758.410347,"s"],"time_commit_end":[1713200758.410674,"s"],"time_input_mgr":[0.000327,"s"],"size_input_mgr":[0.0007524490356445312,"MB"]}
+1713200760181703 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 36 1713200760181666
+1713200760181922 2029583 TASK 123 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200760.181664,"s"],"time_commit_end":[1713200760.181887,"s"],"time_input_mgr":[0.000223,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200760181941 2029583 TASK 117 DONE SUCCESS  0 
+1713200760182925 2029583 TASK 124 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200760312104 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yekxrsavjvosioo 0 2077908 1713200758233482
+1713200760312311 2029583 TASK 119 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200760312391 2029583 TASK 119 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200758.233482,"s"],"time_worker_end":[1713200760.31139,"s"],"time_output_mgr":[3.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200758.233593,"s"],"time_commit_end":[1713200758.233814,"s"],"time_input_mgr":[0.000221,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200760312702 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 534940 236 1713200760312464
+1713200760312855 2029583 TASK 4 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200760.312463,"s"],"time_commit_end":[1713200760.31283,"s"],"time_input_mgr":[0.000367,"s"],"size_input_mgr":[0.5101585388183594,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200760312868 2029583 TASK 119 DONE SUCCESS  0 
+1713200760313415 2029583 TASK 125 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200762099831 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ewfrylzpbupqjwt 0 1917598 1713200760181442
+1713200762100157 2029583 TASK 123 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200762100327 2029583 TASK 123 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200760.181442,"s"],"time_worker_end":[1713200762.09904,"s"],"time_output_mgr":[5.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200760.181664,"s"],"time_commit_end":[1713200760.181887,"s"],"time_input_mgr":[0.000223,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200762100489 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 71 1713200762100415
+1713200762100847 2029583 TASK 125 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200762.100412,"s"],"time_commit_end":[1713200762.100822,"s"],"time_input_mgr":[0.00041,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200762100860 2029583 TASK 123 DONE SUCCESS  0 
+1713200762101368 2029583 TASK 126 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200762280937 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-gleuxltyomiihia 0 179710 1713200762100512
+1713200762281321 2029583 TASK 125 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200762281448 2029583 TASK 125 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200762.100512,"s"],"time_worker_end":[1713200762.280222,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200762.100412,"s"],"time_commit_end":[1713200762.100822,"s"],"time_input_mgr":[0.00041,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200762281601 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 85 1713200762281513
+1713200762281899 2029583 TASK 118 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200762.281511,"s"],"time_commit_end":[1713200762.28187,"s"],"time_input_mgr":[0.000359,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200762281913 2029583 TASK 125 DONE SUCCESS  0 
+1713200765286245 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 RESOURCES {"memory":[200000,"MB"],"disk":[500000,"MB"],"cores":[4,"cores"]}
+1713200766725185 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ergvifujlngcahy 0 69122426 1713200697601985
+1713200766725511 2029583 TASK 5 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200766725649 2029583 TASK 5 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200697.601985,"s"],"time_worker_end":[1713200766.724411,"s"],"time_output_mgr":[5.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200697.601204,"s"],"time_commit_end":[1713200697.60159,"s"],"time_input_mgr":[0.000386,"s"],"size_input_mgr":[0.510157585144043,"MB"]}
+1713200766725815 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 594 86 1713200766725727
+1713200766726324 2029583 TASK 124 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200766.725725,"s"],"time_commit_end":[1713200766.726249,"s"],"time_input_mgr":[0.0005240000000000001,"s"],"size_input_mgr":[0.0005664825439453125,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200766726354 2029583 TASK 5 DONE SUCCESS  0 
+1713200766731644 2029583 TASK 127 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200766872998 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-lqrosnjrcsrxeps 0 4590480 1713200762281804
+1713200766873317 2029583 TASK 118 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200766873454 2029583 TASK 118 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200762.281804,"s"],"time_worker_end":[1713200766.872284,"s"],"time_output_mgr":[5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200762.281511,"s"],"time_commit_end":[1713200762.28187,"s"],"time_input_mgr":[0.000359,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200766873603 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 78 1713200766873522
+1713200766873860 2029583 TASK 87 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200766.873521,"s"],"time_commit_end":[1713200766.873837,"s"],"time_input_mgr":[0.000316,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200766873873 2029583 TASK 118 DONE SUCCESS  0 
+1713200766874143 2029583 TASK 128 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200768283455 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE buffer-rnd-zdvlhynymwbcvcp 0 1556849 1713200766725846
+1713200768283796 2029583 TASK 124 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200768283980 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER OUTPUT outfile 150 141 1713200768283818
+1713200768285814 2029583 TASK 124 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200766.725846,"s"],"time_worker_end":[1713200768.282695,"s"],"time_output_mgr":[0.001965,"s"],"size_output_mgr":[0.0001430511474609375,"MB"],"time_commit_start":[1713200766.725725,"s"],"time_commit_end":[1713200766.726249,"s"],"time_input_mgr":[0.0005240000000000001,"s"],"size_input_mgr":[0.0005664825439453125,"MB"]}
+1713200768285918 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 56 1713200768285860
+1713200768286103 2029583 TASK 122 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200768.285858,"s"],"time_commit_end":[1713200768.286078,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200768286119 2029583 TASK 124 DONE SUCCESS  0 
+1713200769498473 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vxyyfylmrgsppjr 0 2624291 1713200766873429
+1713200769498742 2029583 TASK 87 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200769498887 2029583 TASK 87 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200766.873429,"s"],"time_worker_end":[1713200769.49772,"s"],"time_output_mgr":[4.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200766.873521,"s"],"time_commit_end":[1713200766.873837,"s"],"time_input_mgr":[0.000316,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200769499041 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 82 1713200769498956
+1713200769499339 2029583 TASK 127 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200769.498954,"s"],"time_commit_end":[1713200769.49929,"s"],"time_input_mgr":[0.000336,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200769499364 2029583 TASK 87 DONE SUCCESS  0 
+1713200771935987 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-uxcnwwijeiufhxq 0 3649270 1713200768285957
+1713200771936928 2029583 TASK 122 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200771937074 2029583 TASK 122 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200768.285957,"s"],"time_worker_end":[1713200771.935227,"s"],"time_output_mgr":[5.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200768.285858,"s"],"time_commit_end":[1713200768.286078,"s"],"time_input_mgr":[0.00022,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200771937250 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 81 1713200771937165
+1713200771937596 2029583 TASK 128 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200771.937161,"s"],"time_commit_end":[1713200771.937569,"s"],"time_input_mgr":[0.000408,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200771937609 2029583 TASK 122 DONE SUCCESS  0 
+1713200771938017 2029583 TASK 129 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200772082814 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vcfiljavtlnwlzg 0 144795 1713200771937260
+1713200772083047 2029583 TASK 128 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200772083171 2029583 TASK 128 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200771.93726,"s"],"time_worker_end":[1713200772.082055,"s"],"time_output_mgr":[4.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200771.937161,"s"],"time_commit_end":[1713200771.937569,"s"],"time_input_mgr":[0.000408,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200772084324 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 1073 1713200772083242
+1713200772084747 2029583 TASK 126 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200772.083239,"s"],"time_commit_end":[1713200772.084681,"s"],"time_input_mgr":[0.001442,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200772084820 2029583 TASK 128 DONE SUCCESS  0 
+1713200772238811 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-svgiyjeskkuicyl 0 153717 1713200772084380
+1713200772239064 2029583 TASK 126 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200772239205 2029583 TASK 126 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200772.08438,"s"],"time_worker_end":[1713200772.238097,"s"],"time_output_mgr":[4.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200772.083239,"s"],"time_commit_end":[1713200772.084681,"s"],"time_input_mgr":[0.001442,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200772239362 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 67 1713200772239293
+1713200772239897 2029583 TASK 129 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200772.23929,"s"],"time_commit_end":[1713200772.239873,"s"],"time_input_mgr":[0.000583,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200772239910 2029583 TASK 126 DONE SUCCESS  0 
+1713200772406771 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-pqhtmylybsnbwou 0 166531 1713200772239554
+1713200772406964 2029583 TASK 129 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200772407085 2029583 TASK 129 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200772.239554,"s"],"time_worker_end":[1713200772.406085,"s"],"time_output_mgr":[4.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200772.23929,"s"],"time_commit_end":[1713200772.239873,"s"],"time_input_mgr":[0.000583,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200772407145 2029583 TASK 129 DONE SUCCESS  0 
+1713200774871924 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-topbljducuvakrx 0 14558171 1713200760312958
+1713200774872143 2029583 TASK 4 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200774872297 2029583 TASK 4 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200760.312958,"s"],"time_worker_end":[1713200774.871129,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200760.312463,"s"],"time_commit_end":[1713200760.31283,"s"],"time_input_mgr":[0.000367,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200774872372 2029583 TASK 4 DONE SUCCESS  0 
+1713200774878610 2029583 TASK 130 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200775312998 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-yyfuvzfrblalvpj 0 44251370 1713200731060887
+1713200775313119 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 62 1713200775313056
+1713200775313325 2029583 TASK 130 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200775.313055,"s"],"time_commit_end":[1713200775.313286,"s"],"time_input_mgr":[0.000231,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200775314049 2029583 TASK 3 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200775314124 2029583 TASK 3 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200731.060887,"s"],"time_worker_end":[1713200775.312257,"s"],"time_output_mgr":[3.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200731.060069,"s"],"time_commit_end":[1713200731.060691,"s"],"time_input_mgr":[0.000622,"s"],"size_input_mgr":[0.5101585388183594,"MB"]}
+1713200775314158 2029583 TASK 3 DONE SUCCESS  0 
+1713200775317932 2029583 TASK 131 READY subgraph_callable-933abe86559c460881255546b1b3b142 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200776319109 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 54073 100 1713200776319006
+1713200776319466 2029583 TASK 131 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200776.319004,"s"],"time_commit_end":[1713200776.319408,"s"],"time_input_mgr":[0.000404,"s"],"size_input_mgr":[0.05156803131103516,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200777186181 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-aamtymkxjeqtsvy 0 7686031 1713200769499396
+1713200777186415 2029583 TASK 127 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200777186590 2029583 TASK 127 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200769.499396,"s"],"time_worker_end":[1713200777.185427,"s"],"time_output_mgr":[9.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200769.498954,"s"],"time_commit_end":[1713200769.49929,"s"],"time_input_mgr":[0.000336,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200777186676 2029583 TASK 127 DONE SUCCESS  0 
+1713200777187532 2029583 TASK 132 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200777190224 2029583 TASK 133 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200778191416 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 99 1713200778191313
+1713200778191821 2029583 TASK 132 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200778.19131,"s"],"time_commit_end":[1713200778.191772,"s"],"time_input_mgr":[0.000462,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200778191942 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 81 1713200778191859
+1713200778192199 2029583 TASK 133 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200778.191858,"s"],"time_commit_end":[1713200778.192177,"s"],"time_input_mgr":[0.000319,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200779954410 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-ujazvlohvziywlb 0 4640193 1713200775313483
+1713200779954645 2029583 TASK 130 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200779954796 2029583 TASK 130 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200775.313483,"s"],"time_worker_end":[1713200779.953676,"s"],"time_output_mgr":[5.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200775.313055,"s"],"time_commit_end":[1713200775.313286,"s"],"time_input_mgr":[0.000231,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200779954875 2029583 TASK 130 DONE SUCCESS  0 
+1713200779958024 2029583 TASK 134 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200779958254 2029583 TASK 135 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200780959470 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 94 1713200780959374
+1713200780959799 2029583 TASK 134 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200780.959372,"s"],"time_commit_end":[1713200780.959748,"s"],"time_input_mgr":[0.000376,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200782109684 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-aixtrnoopjrfjhl 0 3917522 1713200778191387
+1713200782110690 2029583 TASK 132 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200782110766 2029583 TASK 132 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200778.191387,"s"],"time_worker_end":[1713200782.108909,"s"],"time_output_mgr":[2.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200778.19131,"s"],"time_commit_end":[1713200778.191772,"s"],"time_input_mgr":[0.000462,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200782110861 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 44 1713200782110816
+1713200782111093 2029583 TASK 135 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200782.110815,"s"],"time_commit_end":[1713200782.11107,"s"],"time_input_mgr":[0.000255,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200782111109 2029583 TASK 132 DONE SUCCESS  0 
+1713200783593867 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-pnuahzjxdldvjwk 0 7273039 1713200776320049
+1713200783594091 2029583 TASK 131 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200783594243 2029583 TASK 131 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200776.320049,"s"],"time_worker_end":[1713200783.593088,"s"],"time_output_mgr":[4.7e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200776.319004,"s"],"time_commit_end":[1713200776.319408,"s"],"time_input_mgr":[0.000404,"s"],"size_input_mgr":[0.05156803131103516,"MB"]}
+1713200783594340 2029583 TASK 131 DONE SUCCESS  0 
+1713200783597506 2029583 TASK 136 READY subgraph_callable-b420a6844bc7ab3157a30c606227f229 FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200783597729 2029583 TASK 137 READY subgraph_callable-2d9983f9f298beecd98866d4a3e47a6c FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200784303219 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-itnamxqjzzdyowe 0 3342888 1713200780959598
+1713200784303379 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 41403 94 1713200784303282
+1713200784303657 2029583 TASK 136 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200784.30328,"s"],"time_commit_end":[1713200784.303622,"s"],"time_input_mgr":[0.000342,"s"],"size_input_mgr":[0.03948497772216797,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200784303991 2029583 TASK 134 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200784304060 2029583 TASK 134 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200780.959598,"s"],"time_worker_end":[1713200784.302486,"s"],"time_output_mgr":[2.8e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200780.959372,"s"],"time_commit_end":[1713200780.959748,"s"],"time_input_mgr":[0.000376,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200784304135 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 2906 34 1713200784304100
+1713200784304337 2029583 TASK 137 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200784.304099,"s"],"time_commit_end":[1713200784.304314,"s"],"time_input_mgr":[0.000215,"s"],"size_input_mgr":[0.002771377563476562,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200784304350 2029583 TASK 134 DONE SUCCESS  0 
+1713200784510927 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-rggcaukwhocgbvx 0 2391898 1713200782118136
+1713200784511133 2029583 TASK 135 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200784511257 2029583 TASK 135 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200782.118136,"s"],"time_worker_end":[1713200784.510034,"s"],"time_output_mgr":[4.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200782.110815,"s"],"time_commit_end":[1713200782.11107,"s"],"time_input_mgr":[0.000255,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200784511330 2029583 TASK 135 DONE SUCCESS  0 
+1713200786613717 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vptlrqsbgeopymb 0 2308470 1713200784304401
+1713200786613949 2029583 TASK 137 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200786614044 2029583 TASK 137 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200784.304401,"s"],"time_worker_end":[1713200786.612871,"s"],"time_output_mgr":[3.6e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200784.304099,"s"],"time_commit_end":[1713200784.304314,"s"],"time_input_mgr":[0.000215,"s"],"size_input_mgr":[0.002771377563476562,"MB"]}
+1713200786614121 2029583 TASK 137 DONE SUCCESS  0 
+1713200786614824 2029583 TASK 138 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200787616041 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 80 1713200787615959
+1713200787616532 2029583 TASK 138 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200787.615956,"s"],"time_commit_end":[1713200787.616478,"s"],"time_input_mgr":[0.000522,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200787698608 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-zaguktcgqzmphqt 0 80962 1713200787616940
+1713200787698737 2029583 TASK 138 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200787698822 2029583 TASK 138 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200787.61694,"s"],"time_worker_end":[1713200787.697902,"s"],"time_output_mgr":[3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200787.615956,"s"],"time_commit_end":[1713200787.616478,"s"],"time_input_mgr":[0.000522,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200787698871 2029583 TASK 138 DONE SUCCESS  0 
+1713200787699313 2029583 TASK 139 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200788188664 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-vdidxxxikrjlayx 0 9996021 1713200778191927
+1713200788188787 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1551 72 1713200788188712
+1713200788189206 2029583 TASK 139 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200788.18871,"s"],"time_commit_end":[1713200788.189181,"s"],"time_input_mgr":[0.000471,"s"],"size_input_mgr":[0.001479148864746094,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200788189385 2029583 TASK 133 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200788189463 2029583 TASK 133 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200778.191927,"s"],"time_worker_end":[1713200788.187948,"s"],"time_output_mgr":[3.3e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200778.191858,"s"],"time_commit_end":[1713200778.192177,"s"],"time_input_mgr":[0.000319,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200788189499 2029583 TASK 133 DONE SUCCESS  0 
+1713200788269569 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE buffer-rnd-ivyupludmeewzxx 0 80067 1713200788188827
+1713200788269743 2029583 TASK 139 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200788269926 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER OUTPUT outfile 1030 145 1713200788269762
+1713200788270080 2029583 TASK 139 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200788.188827,"s"],"time_worker_end":[1713200788.268894,"s"],"time_output_mgr":[0.00026,"s"],"size_output_mgr":[0.0009822845458984375,"MB"],"time_commit_start":[1713200788.18871,"s"],"time_commit_end":[1713200788.189181,"s"],"time_input_mgr":[0.000471,"s"],"size_input_mgr":[0.001479148864746094,"MB"]}
+1713200788270149 2029583 TASK 139 DONE SUCCESS  0 
+1713200790399399 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-kbjwwljuezkiqrk 0 6095181 1713200784303432
+1713200790399657 2029583 TASK 136 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200790399800 2029583 TASK 136 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200784.303432,"s"],"time_worker_end":[1713200790.398613,"s"],"time_output_mgr":[5.1e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200784.30328,"s"],"time_commit_end":[1713200784.303622,"s"],"time_input_mgr":[0.000342,"s"],"size_input_mgr":[0.03948497772216797,"MB"]}
+1713200790399880 2029583 TASK 136 DONE SUCCESS  0 
+1713200790400441 2029583 TASK 140 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200791401671 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1742 78 1713200791401590
+1713200791402175 2029583 TASK 140 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200791.401587,"s"],"time_commit_end":[1713200791.402148,"s"],"time_input_mgr":[0.000561,"s"],"size_input_mgr":[0.001661300659179688,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200791483534 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE temp-rnd-uwuchqfyyimciwt 0 80919 1713200791401959
+1713200791483720 2029583 TASK 140 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200791483845 2029583 TASK 140 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200791.401959,"s"],"time_worker_end":[1713200791.482878,"s"],"time_output_mgr":[4.5e-05,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1713200791.401587,"s"],"time_commit_end":[1713200791.402148,"s"],"time_input_mgr":[0.000561,"s"],"size_input_mgr":[0.001661300659179688,"MB"]}
+1713200791483920 2029583 TASK 140 DONE SUCCESS  0 
+1713200791484420 2029583 TASK 141 READY <function_pipe_at_0x7fd4b18fa3e0> FIRST_RESOURCES 1 {"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200792485584 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER INPUT infile 1551 76 1713200792485506
+1713200792485983 2029583 TASK 141 RUNNING worker-f2976dfa04f0c128e005a58572162713  FIRST_RESOURCES {"time_commit_start":[1713200792.485504,"s"],"time_commit_end":[1713200792.485933,"s"],"time_input_mgr":[0.000429,"s"],"size_input_mgr":[0.001479148864746094,"MB"],"memory":[0,"MB"],"disk":[0,"MB"],"gpus":[0,"gpus"],"cores":[0,"cores"]}
+1713200792565544 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 CACHE_UPDATE buffer-rnd-cvfpootnmkzkjag 0 78317 1713200792486497
+1713200792565740 2029583 TASK 141 WAITING_RETRIEVAL worker-f2976dfa04f0c128e005a58572162713 
+1713200792565921 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 TRANSFER OUTPUT outfile 1030 142 1713200792565760
+1713200792566078 2029583 TASK 141 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1713200792.486497,"s"],"time_worker_end":[1713200792.564814,"s"],"time_output_mgr":[0.000258,"s"],"size_output_mgr":[0.0009822845458984375,"MB"],"time_commit_start":[1713200792.485504,"s"],"time_commit_end":[1713200792.485933,"s"],"time_input_mgr":[0.000429,"s"],"size_input_mgr":[0.001479148864746094,"MB"]}
+1713200792566149 2029583 TASK 141 DONE SUCCESS  0 
+1713200792770913 2029583 WORKER worker-f2976dfa04f0c128e005a58572162713 DISCONNECTION EXPLICIT
+1713200792770959 2029583 TASK 51 RETRIEVED UNKNOWN  -1  {} {"time_commit_start":[1713200283.492944,"s"],"time_commit_end":[1713200283.493886,"s"],"time_input_mgr":[0.000942,"s"],"size_input_mgr":[0.008945465087890625,"MB"]}
+1713200792820656 2029583 MANAGER 2029583 END 549657594
