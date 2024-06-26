@@ -14,6 +14,31 @@ In this directory, there are two main experiments. `DV3/` and `RS-TriPhoton/`. D
 
 ### Setting Up the Environment
 
-The environments used to execute these applications are conda environments where instructions for installation can be found here: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
- 
+The environments used to execute these applications are conda environments where instructions for installation can be found here: 
+https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
+Once Conda is installed the environment for the respective experiment can be created via the `env.yml` file located in each experiment's directory.
+Within each experiment directory, excute the following command:
+
+```
+conda env create --name <ENVIRONMENT_NAME> --file=env.yml
+```
+
+This installs the environment needed to execute the environment, version numbers are shown within the YAML file:
+
+Once installed, activate the environment with the following command:
+
+```
+conda activate <ENVIRONMENT_NAME>
+```
+
+To ensure distribution of the environment across workers within a cluser, we package the environment within a tarball using the following command:
+
+```
+poncho_package_create $CONDA_PREFIX <dv3-env|rstri-env>.tar.gz
+```
+
+This tarball is distributed along with worker binaries ensure environments are available on remote execution sites.
+
+
+### Running the Experiments
