@@ -38,7 +38,34 @@ To ensure distribution of the environment across workers within a cluser, we pac
 poncho_package_create $CONDA_PREFIX <dv3-env|rstri-env>.tar.gz
 ```
 
-This tarball is distributed along with worker binaries ensure environments are available on remote execution sites.
+This tarball is distributed along with worker binaries to ensure environments are available on remote execution sites.
 
 
 ### Running the Experiments
+
+Within each expirment directory exists a `run.sh` script which will execute the experiments needed to generate the example logs. Executed like so:
+
+```
+./run.sh
+
+```
+After completion, logs for each run can be found within the directory `experiments/logs`
+
+### Processing the Results
+
+After completion of both experiments, the logs can be processed to generate graphs similar to those shown in the paper. This can be done like so for each plotting script:
+ 
+```
+python plotting_tools/plot_fig_X.py
+```
+
+A graph will then be generated within the `graphs/` directory.
+More details on expected results and expected runtimes can be found within the pdf AD_SC24.pdf
+
+
+
+
+
+
+
+
