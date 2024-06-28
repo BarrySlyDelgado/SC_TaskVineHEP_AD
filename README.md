@@ -6,7 +6,8 @@ This repository contains the scripts that generated the figures used within the 
 experiments from the paper. There are two directories. First, the `paper_figures/` directory includes original logs used to generate 
 the figures along with the scripts to generate them. Within each directory named `figure_X_FIGURE_NAME/` exists `logs/` and `graphs` directories,
 containing the logs and the graphs generated respectively. Within each directory, exists at least one script named `plot*.py`. Running `python plot*.py`
-generates the respective graph and writes the graph to the `graphs/` directory. In addition, there are extra graphs not used in the paper that are included in the `graphs` directory.
+generates the respective graph and writes the graph to the `graphs/` directory. In addition, there are extra graphs not used in the paper that are included in some `graphs/` directory. 
+To execute `plot.py` correctly, first run the command `uncomporess_large_logs.sh` which unzips large logs contained in some subdirectories. 
 The second directory is named `experiments`. This directory contains scaled down experiments of the applications ran within the paper. 
 In this directory, there are two main experiments. `DV3/` and `RS-TriPhoton/`. Detail on running these experiments is provided below:
 
@@ -58,6 +59,14 @@ After completion of both experiments, the logs can be processed to generate grap
 ```
 python plotting_tools/plot_fig_X.py
 ```
+
+OR
+
+```
+./gen_graphs.sh
+
+```
+For all graphs at the same time
 
 A graph will then be generated within the `graphs/` directory.
 More details on expected results and expected runtimes can be found within the pdf AD_SC24.pdf
