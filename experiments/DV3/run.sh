@@ -3,7 +3,7 @@ do
 	# TaskVine Function Calls
 	for run in 1 2 3
 	do 
-		vine_factory -M dv3-tv-fcs --cores 4 --memory 64000 --disk 100000 --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3_env.tar.gz --scratch-dir="$PWD"/scratch &
+		vine_factory -M dv3-tv-fcs --cores 4 --memory 64000 --disk 100000 --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3-env.tar.gz --scratch-dir="$PWD"/scratch &
                 factory_pid=$!
                 python dv3_tv_fcs.py 4
                 kill $factory_pid
@@ -16,7 +16,7 @@ do
 	# TaskVine Tasks
 	for run in 1 2 3
 	do 
-		vine_factory -M dv3-tv-tasks --cores 4 --memory 64000 --disk 100000 --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3_env.tar.gz --scratch-dir="$PWD"/scratch &
+		vine_factory -M dv3-tv-tasks --cores 4 --memory 64000 --disk 100000 --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3-env.tar.gz --scratch-dir="$PWD"/scratch &
                 factory_pid=$!
                 python dv3_tv_tasks.py 1
                 kill $factory_pid
@@ -29,7 +29,7 @@ do
 	# Work Queue
 	for run in 1 2 3
 	do 
-		work_queue_factory -M dv3-wq --cores 4 --memory 64000 --disk 100000  --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3_env.tar.gz --scratch-dir="$PWD"/scratch &
+		work_queue_factory -M dv3-wq --cores 4 --memory 64000 --disk 100000  --timeout 600 -T sge --min-workers 0 --max-workers  $num_jobs --workers-per-cycle $num_jobs --python-env=dv3-env.tar.gz --scratch-dir="$PWD"/scratch &
                 factory_pid=$!
                 python dv3_wq.py 1
                 kill $factory_pid
