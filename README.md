@@ -1,5 +1,7 @@
 # Artifact: Reshaping High Energy Physics Applications for Near-Interactive Execution Using TaskVine
 
+[![DOI](https://zenodo.org/badge/789708201.svg)](https://zenodo.org/doi/10.5281/zenodo.12583625)
+
 ## Description
 
 This repository contains the scripts that generated the figures used within the paper in addition to scripts used to replicate 
